@@ -1,0 +1,1 @@
+{"mappings":"AAAA,QAAQ,GAAG,CAAC;AAEZ,SAAS;IACL,MAAM;AACR","sources":["src/scripts/interests.js"],"sourcesContent":["console.log(\"ABC\")\r\n\r\nfunction myFunction() {\r\n    alert(\"You clicked\");\r\n  }"],"names":[],"version":3,"file":"interests.10a54fc2.js.map","sourceRoot":"/__parcel_source_root/"}
