@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("/src/styles/images/pexels1.jpg");
+    background-size: 100%;
+    font-family: "Open Sans", serif;
+    font-size: 17px;
+    padding: 80px;
+    color: white;
+  }
+  
+  .box {
+    margin-top: 80px;
+    padding: 35px;
+    background-color: black;
+    border: black;
+  }
+  
+  h1 {
+    font-size: 35px;
+    margin: 25px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    background-color: black;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  .nav-left {
+    float: left;
+  }
+  
+  .nav-right {
+    float: right;
+  }
+  
+  .nav-left a:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  .nav-left a.active {
+    background-color:  #333;
+    color: white;
+  }
+  
+  .nav-left a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav-right a:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav-right a {
+    float: left;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .nav-left a {
+      float: none;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .nav-right a {
+      float: none;
+      display: block;
+    }
+  }
