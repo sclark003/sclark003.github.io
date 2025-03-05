@@ -1,5 +1,3 @@
-console.log("ABC")
-
-function myFunction() {
-    alert("You clicked");
+function clickNewYork() {
+    window.location.href = "travel.html"
   }
