@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-image: url("../../pexels3.71951f7d.jpg");
+  background-size: 100%;
+  padding: 80px;
+  font-family: Open Sans, serif;
+  font-size: 17px;
+}
+
+.box {
+  background-color: #000;
+  border: #000;
+  margin-top: 80px;
+  padding: 35px;
+}
+
+h1 {
+  text-align: center;
+  margin: 75px;
+  font-size: 35px;
+}
+
+h2 {
+  margin: 25px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  background-color: #000;
+}
+
+nav {
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-left a:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.nav-left a.active {
+  color: #fff;
+  background-color: #333;
+}
+
+.nav-left a {
+  float: left;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.nav-right a {
+  float: left;
+  text-align: center;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+@media screen and (width <= 500px) {
+  .nav-left a, .nav-right a {
+    float: none;
+    display: block;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+  border-radius: 0 3px 3px 0;
+  width: auto;
+  margin-top: -50px;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+}
+
+.next {
+  border-radius: 3px 0 0 3px;
+  left: 960px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #000c;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  color: #fff;
+  background-color: #222;
+  padding: 2px 16px;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 47.6px;
+  height: 30px;
+}
+
+.demo {
+  opacity: .6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+div.column.img {
+  width: 50%;
+}
+/*# sourceMappingURL=travel.079156e0.css.map */
