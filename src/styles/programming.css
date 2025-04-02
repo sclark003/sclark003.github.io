@@ -24,9 +24,16 @@
     font-size: 35px;
     margin: 25px;
   }
+
+  h3 {
+    font-size: 20px;
+    margin: 25px;
+    font-weight: 500;
+    padding: 10;
+  }
   
   p {
-    margin-bottom: 20px;
+    margin: 25px;
   }
   
   a {
@@ -104,3 +111,12 @@
       display: block;
     }
   }
+
+  div {
+    background-color: rgb(204, 119, 7);
+    margin: 20px;
+    color: #000;
+    padding-bottom: 5px;
+  }
+
+  ul { margin-left: 50px; }

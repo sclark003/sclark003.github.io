@@ -25,8 +25,15 @@ h1 {
   font-size: 35px;
 }
 
+h3 {
+  margin: 25px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 p {
-  margin-bottom: 20px;
+  margin: 25px;
 }
 
 a {
@@ -96,5 +103,16 @@ nav ul li {
     float: none;
     display: block;
   }
+}
+
+div {
+  color: #000;
+  background-color: #cc7707;
+  margin: 20px;
+  padding-bottom: 5px;
+}
+
+ul {
+  margin-left: 50px;
 }
 /*# sourceMappingURL=programming.8f9e364b.css.map */
