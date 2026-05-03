@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <Box
-      bgImage="src/images/paint.jpg"
+      bgImage="/images/paint.jpg"
     >
       <Container maxW="1200px">
         <SectionCard>
@@ -20,7 +20,7 @@ const Home = () => {
           >
             <Box flexShrink={0}>
               <Image
-                src="/src/images/me.jpg"
+                src="/images/me.jpg"
                 alt="Sarah Clark"
                 boxSize={{ base: '200px', md: '300px' }}
                 boxShadow="lg"
@@ -86,7 +86,7 @@ const Home = () => {
                   </ExternalLinkButton>
                   <Box flexShrink={0}>
                     <Image
-                      src="/src/images/code_club.JPEG"
+                      src="/images/code_club.JPEG"
                       alt="Microsoft Arcade Code"
                     />
                   </Box>
@@ -112,12 +112,12 @@ const Home = () => {
                   </ExternalLinkButton>
                   <MediaSlider
                     slides={[
-                      { src: '/src/images/craft1.JPEG', description: 'White Butterly Polymer Clay Earrings' },
-                      { src: '/src/images/craft2.JPEG', description: 'Spring Butterfly Polymer Clay Earrings' },
-                      { src: '/src/images/craft3.PNG', description: 'Woodland Polymer Clay Earrings' },
-                      { src: '/src/images/craft4.PNG', description: 'Golden Sun and Moon Stud Earrings' },
-                      { src: '/src/images/craft5.PNG', description: 'Body Form Soy Wax Candle' },
-                      { src: '/src/images/craft6.PNG', description: 'Polymer Clay Oranges Bracelet' }
+                      { src: '/images/craft1.JPEG', description: 'White Butterly Polymer Clay Earrings' },
+                      { src: '/images/craft2.JPEG', description: 'Spring Butterfly Polymer Clay Earrings' },
+                      { src: '/images/craft3.PNG', description: 'Woodland Polymer Clay Earrings' },
+                      { src: '/images/craft4.PNG', description: 'Golden Sun and Moon Stud Earrings' },
+                      { src: '/images/craft5.PNG', description: 'Body Form Soy Wax Candle' },
+                      { src: '/images/craft6.PNG', description: 'Polymer Clay Oranges Bracelet' }
                     ]}
                   />
                 </VStack>
@@ -167,23 +167,23 @@ const Home = () => {
                 </VStack>
                 <MediaSlider
                     slides={[
-                      { src: '/src/images/travel1.JPG', description: 'Oslo, Norway' },
-                      { src: '/src/images/travel2.JPG', description: 'Wellington, New Zealand' },
-                      { src: '/src/images/travel3.JPG', description: 'Snowdonia, Wales' },
-                      { src: '/src/images/travel4.JPG', description: 'Marrakech, Morocco' },
-                      { src: '/src/images/travel5.jpg', description: 'Uluṟu-Kata Tjuṯa National Park, Australia' },
-                      { src: '/src/images/travel14.jpg', description: 'Tromso, Norway' },
-                      { src: '/src/images/travel7.jpg', description: 'Franz Josef Glacier, New Zealand' },
-                      { src: '/src/images/travel9.jpg', description: 'Stockholm, Sweden' },
-                      { src: '/src/images/travel10.jpg', description: 'Paris, France' },
-                      { src: '/src/images/travel12.jpg', description: 'Prague, Czech Republic' },
-                      { src: '/src/images/travel6.jpg', description: 'Blue Mountains, Australia' },
-                      { src: '/src/images/travel13.jpg', description: 'Burano, Venice, Italy' },
-                      { src: '/src/images/travel18.jpg', description: 'Lake District, England' },
-                      { src: '/src/images/travel15.JPG', description: 'Olden, Norway' },
-                      { src: '/src/images/travel16.jpg', description: 'Gljúfrabúi, Iceland' },
-                      { src: '/src/images/travel20.jpg', description: 'Hobbiton, New Zealand' },
-                      { src: '/src/images/travel19.jpg', description: 'Isle of Skye, Scotland' }
+                      { src: '/images/travel1.JPG', description: 'Oslo, Norway' },
+                      { src: '/images/travel2.JPG', description: 'Wellington, New Zealand' },
+                      { src: '/images/travel3.JPG', description: 'Snowdonia, Wales' },
+                      { src: '/images/travel4.JPG', description: 'Marrakech, Morocco' },
+                      { src: '/images/travel5.jpg', description: 'Uluṟu-Kata Tjuṯa National Park, Australia' },
+                      { src: '/images/travel14.jpg', description: 'Tromso, Norway' },
+                      { src: '/images/travel7.jpg', description: 'Franz Josef Glacier, New Zealand' },
+                      { src: '/images/travel9.jpg', description: 'Stockholm, Sweden' },
+                      { src: '/images/travel10.jpg', description: 'Paris, France' },
+                      { src: '/images/travel12.jpg', description: 'Prague, Czech Republic' },
+                      { src: '/images/travel6.jpg', description: 'Blue Mountains, Australia' },
+                      { src: '/images/travel13.jpg', description: 'Burano, Venice, Italy' },
+                      { src: '/images/travel18.jpg', description: 'Lake District, England' },
+                      { src: '/images/travel15.JPG', description: 'Olden, Norway' },
+                      { src: '/images/travel16.jpg', description: 'Gljúfrabúi, Iceland' },
+                      { src: '/images/travel20.jpg', description: 'Hobbiton, New Zealand' },
+                      { src: '/images/travel19.jpg', description: 'Isle of Skye, Scotland' }
                     ]}
                   />
               </TabPanel>

@@ -32,9 +32,9 @@ const Programming = () => {
       additionalInfo:
         'Several different classification methods were investigated for this task: a K-Nearest Neighbours (KNN) classifier, a Support Vector Machine (SVM) and several different Convolutional Neural Network (CNN) models. The KNN and SVM models achieved the best accuracy on the test data, but a Resnet CNN model proved to be the most effective for this task when applied to real life classification, likely because the CNN models had been trained using data augmentation techniques to make them more resilient to noise.',
       githubUrl: 'https://github.com/sclark003/Domestic-Sound-Classification',
-      image1: '/src/images/msc.png',
-      image2: '/src/images/msc2.png',
-      image3: '/src/images/msc3.png',
+      image1: '/images/msc.png',
+      image2: '/images/msc2.png',
+      image3: '/images/msc3.png',
       maxW: '33%'
     },
     {
@@ -44,9 +44,9 @@ const Programming = () => {
         'The aim of this project was to perform and evaluate image classification tasks with deeper networks. The models were trained and tested on three different datasets: MNIST, CIFAR-10 and Tiny-ImageNet.',
       ],
       githubUrl: 'https://github.com/sclark003/Image-Classification-PyTorch',
-      image1: '/src/images/image1.png',
-      image2: '/src/images/image2.png',
-      image3: '/src/images/image3.png',
+      image1: '/images/image1.png',
+      image2: '/images/image2.png',
+      image3: '/images/image3.png',
       maxW: '33%'
     },
     {
@@ -57,8 +57,8 @@ const Programming = () => {
         'In order to build an audio fingerprint, the audio data is first converted into a time-frequency spectrogram representation, and then the local peaks in this spectrogram are found. These peaks are then paired together to create a set of hash values that represent the track. The hash values are stored in a database along with the track ID and the time offset of the first peak in the pair. For a query track, the same process is applied to create a set of hash values, and these are compared against the database to find matches. The track with the most matches is returned as the identified track.'
       ],
       githubUrl: 'https://github.com/sclark003/Audio-Fingerprinting',
-      image1: '/src/images/audio1.png',
-      image2: '/src/images/audio2.png',
+      image1: '/images/audio1.png',
+      image2: '/images/audio2.png',
       maxW: '50%'
     },
     {
@@ -69,7 +69,7 @@ const Programming = () => {
         'Python is written in C, and therefore we can ’extend’ it by writing new code in C/C++. This is what the ’Simplified Wrapper and Interface Generator’ (SWIG) does. SWIG is a piece of open-source software which creates ’wrappers’ for C/C++ programmes in a number of different languages, such as python which we are using in this project. It allows us to use and implement C++ modules within a python program, so that faster code can be written.'
       ],
       githubUrl: 'https://github.com/sclark003/Tone-generation-in-Python-using-C-and-SWIG',
-      image1: '/src/images/swig.png',
+      image1: '/images/swig.png',
       maxW: '50%'
     },
     {
@@ -81,7 +81,7 @@ const Programming = () => {
         'Finally, a graphical user interface was designed using PyQt. This GUI allowed users to make alterations to the sound, such as changing the wave type, and altering the frequency and duty cycle of the wave. The GUI was designed to be simple and intuitive to use, with sliders and dropdown menus for making adjustments.'
         ],
       githubUrl: 'https://github.com/sclark003/MIDI-Synthesier-PyQt5-GUI',
-      image1: '/src/images/midi.png',
+      image1: '/images/midi.png',
       maxW: '50%'
     },
   ];
@@ -100,7 +100,7 @@ const Programming = () => {
 
   return (
     <Box
-      bgImage="src/images/pexels3.jpg"
+      bgImage="/images/pexels3.jpg"
       minHeight='100vh'
     >
       <Container maxW="90%">

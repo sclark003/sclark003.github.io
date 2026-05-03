@@ -28,7 +28,7 @@ const Experience = () => {
 
   return (
     <Box
-      bgImage="src/images/pexels2.jpg"
+      bgImage="/images/pexels2.jpg"
     >
       <Container maxW="90%">
         <Stack direction='row' spacing='35px'>
@@ -45,7 +45,7 @@ const Experience = () => {
                   <VStack align="stretch" spacing={3} flex="1">
                     <HStack flex="1" spacing={3}>
                       <Image
-                        src="/src/images/QMU.jpg"
+                        src="/images/QMU.jpg"
                         alt="QMU"
                         boxSize="40px"
                         objectFit="contain"
@@ -127,7 +127,7 @@ const Experience = () => {
                   <VStack align="stretch" spacing={3} flex="1">
                     <HStack flex="1" spacing={3}>
                       <Image
-                        src="/src/images/UofG.png"
+                        src="/images/UofG.png"
                         alt="UofG"
                         boxSize="40px"
                         objectFit="contain"
@@ -298,7 +298,7 @@ const Experience = () => {
                 <AccordionButton>
                   <HStack flex="1" spacing={3}>
                     <Image
-                      src="/src/images/bhs.png"
+                      src="/images/bhs.png"
                       alt="BHS"
                       boxSize="40px"
                       objectFit="contain"
@@ -392,7 +392,7 @@ const Experience = () => {
                 <AccordionButton>
                   <HStack flex="1" spacing={3}>
                     <Image
-                      src="/src/images/jpmc.jpg"
+                      src="/images/jpmc.jpg"
                       alt="JPMC"
                       boxSize="40px"
                       objectFit="contain"
@@ -446,7 +446,7 @@ const Experience = () => {
                 <AccordionButton>
                   <HStack flex="1" spacing={3}>
                     <Image
-                      src="/src/images/mthree.png"
+                      src="/images/mthree.png"
                       alt="mThree"
                       boxSize="40px"
                       objectFit="contain"
