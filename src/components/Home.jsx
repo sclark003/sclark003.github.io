@@ -183,7 +183,7 @@ const Home = () => {
                       { src: '/images/travel15.jpg', description: 'Olden, Norway' },
                       { src: '/images/travel16.JPG', description: 'Gljúfrabúi, Iceland' },
                       { src: '/images/travel20.jpg', description: 'Hobbiton, New Zealand' },
-                      { src: '/images/travel19.jpg', description: 'Isle of Skye, Scotland' }
+                      { src: '/images/travel19.JPG', description: 'Isle of Skye, Scotland' }
                     ]}
                   />
               </TabPanel>
