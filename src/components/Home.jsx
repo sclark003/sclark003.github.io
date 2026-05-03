@@ -86,7 +86,7 @@ const Home = () => {
                   </ExternalLinkButton>
                   <Box flexShrink={0}>
                     <Image
-                      src="/images/code_club.JPEG"
+                      src="/images/code_club.jpeg"
                       alt="Microsoft Arcade Code"
                     />
                   </Box>
@@ -112,12 +112,12 @@ const Home = () => {
                   </ExternalLinkButton>
                   <MediaSlider
                     slides={[
-                      { src: '/images/craft1.JPEG', description: 'White Butterly Polymer Clay Earrings' },
-                      { src: '/images/craft2.JPEG', description: 'Spring Butterfly Polymer Clay Earrings' },
-                      { src: '/images/craft3.PNG', description: 'Woodland Polymer Clay Earrings' },
-                      { src: '/images/craft4.PNG', description: 'Golden Sun and Moon Stud Earrings' },
-                      { src: '/images/craft5.PNG', description: 'Body Form Soy Wax Candle' },
-                      { src: '/images/craft6.PNG', description: 'Polymer Clay Oranges Bracelet' }
+                      { src: '/images/craft1.jpeg', description: 'White Butterly Polymer Clay Earrings' },
+                      { src: '/images/craft2.jpeg', description: 'Spring Butterfly Polymer Clay Earrings' },
+                      { src: '/images/craft3.png', description: 'Woodland Polymer Clay Earrings' },
+                      { src: '/images/craft4.png', description: 'Golden Sun and Moon Stud Earrings' },
+                      { src: '/images/craft5.png', description: 'Body Form Soy Wax Candle' },
+                      { src: '/images/craft6.png', description: 'Polymer Clay Oranges Bracelet' }
                     ]}
                   />
                 </VStack>
@@ -167,21 +167,21 @@ const Home = () => {
                 </VStack>
                 <MediaSlider
                     slides={[
-                      { src: '/images/travel1.JPG', description: 'Oslo, Norway' },
-                      { src: '/images/travel2.JPG', description: 'Wellington, New Zealand' },
-                      { src: '/images/travel3.JPG', description: 'Snowdonia, Wales' },
-                      { src: '/images/travel4.JPG', description: 'Marrakech, Morocco' },
+                      { src: '/images/travel1.jpg', description: 'Oslo, Norway' },
+                      { src: '/images/travel2.jpg', description: 'Wellington, New Zealand' },
+                      { src: '/images/travel3.jpg', description: 'Snowdonia, Wales' },
+                      { src: '/images/travel4.jpg', description: 'Marrakech, Morocco' },
                       { src: '/images/travel5.jpg', description: 'Uluṟu-Kata Tjuṯa National Park, Australia' },
-                      { src: '/images/travel14.jpg', description: 'Tromso, Norway' },
+                      { src: '/images/travel14.JPG', description: 'Tromso, Norway' },
                       { src: '/images/travel7.jpg', description: 'Franz Josef Glacier, New Zealand' },
                       { src: '/images/travel9.jpg', description: 'Stockholm, Sweden' },
-                      { src: '/images/travel10.jpg', description: 'Paris, France' },
-                      { src: '/images/travel12.jpg', description: 'Prague, Czech Republic' },
+                      { src: '/images/travel10.JPG', description: 'Paris, France' },
+                      { src: '/images/travel12.JPG', description: 'Prague, Czech Republic' },
                       { src: '/images/travel6.jpg', description: 'Blue Mountains, Australia' },
-                      { src: '/images/travel13.jpg', description: 'Burano, Venice, Italy' },
-                      { src: '/images/travel18.jpg', description: 'Lake District, England' },
-                      { src: '/images/travel15.JPG', description: 'Olden, Norway' },
-                      { src: '/images/travel16.jpg', description: 'Gljúfrabúi, Iceland' },
+                      { src: '/images/travel13.JPG', description: 'Burano, Venice, Italy' },
+                      { src: '/images/travel18.JPG', description: 'Lake District, England' },
+                      { src: '/images/travel15.jpg', description: 'Olden, Norway' },
+                      { src: '/images/travel16.JPG', description: 'Gljúfrabúi, Iceland' },
                       { src: '/images/travel20.jpg', description: 'Hobbiton, New Zealand' },
                       { src: '/images/travel19.jpg', description: 'Isle of Skye, Scotland' }
                     ]}
