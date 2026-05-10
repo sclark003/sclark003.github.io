@@ -5,5 +5,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 1234,
+    base: '/sclark003.github.io/',
   },
 });
