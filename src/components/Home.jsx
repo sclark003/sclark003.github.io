@@ -167,23 +167,19 @@ const Home = () => {
                 </VStack>
                 <MediaSlider
                     slides={[
-                      { src: '/images/travel1.jpg', description: 'Oslo, Norway' },
-                      { src: '/images/travel2.jpg', description: 'Wellington, New Zealand' },
-                      { src: '/images/travel3.jpg', description: 'Snowdonia, Wales' },
-                      { src: '/images/travel4.jpg', description: 'Marrakech, Morocco' },
-                      { src: '/images/travel5.jpg', description: 'Uluṟu-Kata Tjuṯa National Park, Australia' },
-                      { src: '/images/travel14.JPG', description: 'Tromso, Norway' },
-                      { src: '/images/travel7.jpg', description: 'Franz Josef Glacier, New Zealand' },
-                      { src: '/images/travel9.jpg', description: 'Stockholm, Sweden' },
-                      { src: '/images/travel10.JPG', description: 'Paris, France' },
-                      { src: '/images/travel12.JPG', description: 'Prague, Czech Republic' },
-                      { src: '/images/travel6.jpg', description: 'Blue Mountains, Australia' },
-                      { src: '/images/travel13.JPG', description: 'Burano, Venice, Italy' },
-                      { src: '/images/travel18.JPG', description: 'Lake District, England' },
-                      { src: '/images/travel15.jpg', description: 'Olden, Norway' },
-                      { src: '/images/travel16.JPG', description: 'Gljúfrabúi, Iceland' },
-                      { src: '/images/travel20.jpg', description: 'Hobbiton, New Zealand' },
-                      { src: '/images/travel19.JPG', description: 'Isle of Skye, Scotland' }
+                      { src: 'images/travel5.jpg', description: 'Uluṟu-Kata Tjuṯa National Park, Australia' },
+                      { src: 'images/travel14.JPG', description: 'Tromso, Norway' },
+                      { src: 'images/travel7.jpg', description: 'Franz Josef Glacier, New Zealand' },
+                      { src: 'images/travel9.jpg', description: 'Stockholm, Sweden' },
+                      { src: 'images/travel10.JPG', description: 'Paris, France' },
+                      { src: 'images/travel12.JPG', description: 'Prague, Czech Republic' },
+                      { src: 'images/travel6.jpg', description: 'Blue Mountains, Australia' },
+                      { src: 'images/travel13.JPG', description: 'Burano, Venice, Italy' },
+                      { src: 'images/travel18.JPG', description: 'Lake District, England' },
+                      { src: 'images/travel15.jpg', description: 'Olden, Norway' },
+                      { src: 'images/travel16.JPG', description: 'Gljúfrabúi, Iceland' },
+                      { src: 'images/travel20.jpg', description: 'Hobbiton, New Zealand' },
+                      { src: 'images/travel19.JPG', description: 'Isle of Skye, Scotland' }
                     ]}
                   />
               </TabPanel>

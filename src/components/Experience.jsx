@@ -408,7 +408,7 @@ const Experience = () => {
                 <AccordionPanel pb={4}>
                   <UnorderedList spacing={3} styleType="disc" pl={6}>
                     <ListItem>
-                      Led the development of a key feature enabling seamless client migration from an old system to a new platform, enhancing functionality and user experience.
+                      Led the development of several key features enabling seamless client migration from an old system to a new platform, enhancing functionality and user experience.
                     </ListItem>
                     <ListItem>
                       Designed the system architecture, ensuring scalability, security, and efficiency in alignment with business requirements.
