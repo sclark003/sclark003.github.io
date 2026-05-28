@@ -40,7 +40,7 @@ function parsePost(filePath, raw) {
 
 const allPosts = Object.entries(postFiles)
   .map(([path, raw]) => parsePost(path, raw))
-  .filter((post) => !post.draft)
+  .filter((post) => !post.draft && !post.slug.startsWith('_'))
   .sort((a, b) => new Date(b.date) - new Date(a.date));
 
 export function getAllPosts() {
