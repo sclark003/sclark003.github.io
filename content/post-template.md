@@ -40,4 +40,5 @@ Add more content as needed. Delete any sections you do not use.
 1. Update `title`, `date`, and `excerpt` in the header above
 2. Set `draft: false` when you are ready to publish
 3. Save this file in `content/blog/` with a new name (e.g. `my-post-title.md`)
-4. Run `npm run build:pages` and push to GitHub
+4. Add any images to `public/images/`
+5. Run `npm run build:pages` and push to GitHub
