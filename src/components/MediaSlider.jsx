@@ -44,8 +44,8 @@ function MediaSlider({
     <Box position="relative" width="100%" {...props}>
       <Box
         position="relative"
-        width="300px"
-        height={{ base: '100%', md: '450px' }}
+        width={{ base: '100%', md: '300px' }}
+        height={{ base: '280px', sm: '320px', md: '450px' }}
         maxWidth="100%"
         mx="auto"
         overflow="hidden"
@@ -116,7 +116,7 @@ function MediaSlider({
           color="white"
           width="100%"
           p="3"
-          fontSize="md"
+          fontSize={{ base: 'sm', md: 'md' }}
           fontWeight="medium"
           textAlign="center"
         >

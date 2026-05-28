@@ -9,7 +9,6 @@ import {
 } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { PageTitle, ProjectCard } from './Components';
-import { m } from 'framer-motion';
 
 const Programming = () => {
   const cardBorderColor = useColorModeValue('orange.200', 'gray.600');
@@ -101,13 +100,16 @@ const Programming = () => {
   return (
     <Box
       bgImage="/images/pexels3.jpg"
-      minHeight='100vh'
+      bgSize="cover"
+      bgPosition="center"
+      bgRepeat="no-repeat"
+      minHeight="100vh"
     >
-      <Container maxW="90%">
+      <Container maxW="1200px" px={{ base: 4, md: 6 }} py={{ base: 4, md: 0 }}>
         <Box
           borderRadius="lg"
           boxShadow="2xl"
-          p={10}
+          p={{ base: 4, md: 10 }}
         >
           <PageTitle gradient="linear(to-r, orange.500, red.500)">
             Programming
@@ -131,7 +133,7 @@ const Programming = () => {
               size={{ base: 'sm', md: 'md' }}
             />
 
-            <Box flex="1" minW="280px" maxW="90%">
+            <Box flex="1" minW={{ base: '100%', md: '280px' }} maxW="100%">
               <ProjectCard
                 project={projects[currentProjectIndex]}
                 cardBorderColor={cardBorderColor}

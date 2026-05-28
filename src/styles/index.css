@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+html {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: 'Roboto Serif', serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -12,4 +18,20 @@ h5,
 h6,
 [role="heading"] {
   font-family: 'Roboto Serif', serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .chakra-tabs__tab {
+    min-height: 44px;
+  }
+
+  .chakra-button,
+  .chakra-icon-button {
+    min-height: 44px;
+  }
 }

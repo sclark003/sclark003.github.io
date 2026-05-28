@@ -29,10 +29,13 @@ const Experience = () => {
   return (
     <Box
       bgImage="/images/pexels2.jpg"
+      bgSize="cover"
+      bgPosition="center"
+      bgRepeat="no-repeat"
     >
-      <Container maxW="90%">
-        <Stack direction='row' spacing='35px'>
-          <SectionCard width = '50%'>
+      <Container maxW="1200px" px={{ base: 4, md: 6 }} py={{ base: 4, md: 0 }}>
+        <Stack direction={{ base: 'column', lg: 'row' }} spacing={{ base: 4, lg: '35px' }}>
+          <SectionCard width={{ base: '100%', lg: '50%' }}>
             <PageTitle gradient="linear(to-r, blue.600, purple.600)">
               Education
             </PageTitle>
@@ -50,13 +53,13 @@ const Experience = () => {
                         boxSize="40px"
                         objectFit="contain"
                       />
-                      <Box textAlign="left">
-                        <Heading as="h3" size="md">
+                      <Box textAlign="left" minW={0}>
+                        <Heading as="h3" size="md" fontSize={{ base: 'sm', md: 'md' }}>
                           Queen Mary University of London (2020-21)
                         </Heading>
                       </Box>
                     </HStack>
-                    <Box textAlign="left">
+                    <Box textAlign="left" display={{ base: 'none', md: 'block' }}>
                       <UnorderedList>
                         <ListItem>Built NLP models using NLTK and neural network architectures for text classification and language modelling tasks.</ListItem>
                         <ListItem>Implemented tokenisation, feature extraction, and embedding-based approaches.</ListItem>
@@ -132,13 +135,13 @@ const Experience = () => {
                         boxSize="40px"
                         objectFit="contain"
                       />
-                      <Box textAlign="left">
-                        <Heading as="h3" size="md">
+                      <Box textAlign="left" minW={0}>
+                        <Heading as="h3" size="md" fontSize={{ base: 'sm', md: 'md' }}>
                           University of Glasgow (2016-20)
                         </Heading>
                       </Box>
                     </HStack>
-                    <Box textAlign="left">
+                    <Box textAlign="left" display={{ base: 'none', md: 'block' }}>
                       <UnorderedList>
                         <ListItem>Developed a strong foundation in signal processing, communications systems, and real-time computing. Coursework included Digital Signal Processing (Python), Communication Systems, Electronic System Design, Control Systems, and Simulation of Engineering Systems.</ListItem>
                         <ListItem>Final year project focused on real-time EEG signal processing, investigating signal-to-noise ratio (SNR) limits in brain-computer interface tasks. Developed software in Python and C++ for filtering, feature extraction, and real-time analysis of noisy biological signals.</ListItem>
@@ -303,8 +306,8 @@ const Experience = () => {
                       boxSize="40px"
                       objectFit="contain"
                     />
-                    <Box textAlign="left">
-                      <Heading as="h3" size="md">
+                    <Box textAlign="left" minW={0}>
+                      <Heading as="h3" size="md" fontSize={{ base: 'sm', md: 'md' }}>
                         Beaconsfield High School (2011-16)
                       </Heading>
                     </Box>
@@ -380,7 +383,7 @@ const Experience = () => {
             </Accordion>
           </SectionCard>
 
-          <SectionCard width = '50%'>
+          <SectionCard width={{ base: '100%', lg: '50%' }}>
             <PageTitle gradient="linear(to-r, blue.600, purple.600)">
               Experience
             </PageTitle>
@@ -397,8 +400,8 @@ const Experience = () => {
                       boxSize="40px"
                       objectFit="contain"
                     />
-                    <Box textAlign="left">
-                      <Heading as="h3" size="md">
+                    <Box textAlign="left" minW={0}>
+                      <Heading as="h3" size="md" fontSize={{ base: 'sm', md: 'md' }}>
                         JP Morgan Chase (2022 - Present)
                       </Heading>
                     </Box>
@@ -451,8 +454,8 @@ const Experience = () => {
                       boxSize="40px"
                       objectFit="contain"
                     />
-                    <Box textAlign="left">
-                      <Heading as="h3" size="md">
+                    <Box textAlign="left" minW={0}>
+                      <Heading as="h3" size="md" fontSize={{ base: 'sm', md: 'md' }}>
                         mThree (2021 - 2022)
                       </Heading>
                     </Box>

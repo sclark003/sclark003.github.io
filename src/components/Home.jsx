@@ -8,8 +8,11 @@ const Home = () => {
   return (
     <Box
       bgImage="/images/paint.jpg"
+      bgSize="cover"
+      bgPosition="center"
+      bgRepeat="no-repeat"
     >
-      <Container maxW="1200px">
+      <Container maxW="1200px" px={{ base: 4, md: 6 }} py={{ base: 4, md: 0 }}>
         <SectionCard>
           <PageTitle>About Me</PageTitle>
 
@@ -49,19 +52,38 @@ const Home = () => {
           </Flex>
         </SectionCard>
 
-        <SectionCard p={6} textAlign="center" boxShadow="xl">
+        <SectionCard p={{ base: 4, md: 6 }} textAlign="center" boxShadow="xl">
 
           <PageTitle as="h6" size="md">My Interests</PageTitle>
-          <Tabs isFitted variant='enclosed'>
-            <TabList mb='1em'>
-              <Tab>STEM Outreach</Tab>
-              <Tab>Creative Outlets</Tab>
-              <Tab>Language Learning</Tab>
-              <Tab>Music</Tab>
-              <Tab>Travel</Tab>
+          <Tabs isFitted variant="enclosed">
+            <TabList
+              mb="1em"
+              overflowX="auto"
+              overflowY="hidden"
+              flexWrap="nowrap"
+              css={{
+                scrollbarWidth: 'none',
+                '&::-webkit-scrollbar': { display: 'none' },
+              }}
+            >
+              <Tab whiteSpace="nowrap" fontSize={{ base: 'xs', sm: 'sm', md: 'md' }} px={{ base: 2, md: 4 }}>
+                STEM Outreach
+              </Tab>
+              <Tab whiteSpace="nowrap" fontSize={{ base: 'xs', sm: 'sm', md: 'md' }} px={{ base: 2, md: 4 }}>
+                Creative Outlets
+              </Tab>
+              <Tab whiteSpace="nowrap" fontSize={{ base: 'xs', sm: 'sm', md: 'md' }} px={{ base: 2, md: 4 }}>
+                Language Learning
+              </Tab>
+              <Tab whiteSpace="nowrap" fontSize={{ base: 'xs', sm: 'sm', md: 'md' }} px={{ base: 2, md: 4 }}>
+                Music
+              </Tab>
+              <Tab whiteSpace="nowrap" fontSize={{ base: 'xs', sm: 'sm', md: 'md' }} px={{ base: 2, md: 4 }}>
+                Travel
+              </Tab>
             </TabList>
             <TabPanels>
-              <TabPanel textAlign="left">
+              <TabPanel textAlign="left" px={{ base: 1, md: 4 }}>
                 <VStack align="stretch" spacing={4} flex={1}>
                   <BodyText>
                     Encouraging coding/STEM at school is something I believe is very important as I would not have the career I have today if I didn’t have people in my life encouraging my own interest in STEM.
@@ -84,15 +106,17 @@ const Home = () => {
                   >
                     Here are some session plans I have created.
                   </ExternalLinkButton>
-                  <Box flexShrink={0}>
+                  <Box flexShrink={0} maxW="100%">
                     <Image
                       src="/images/code_club.jpeg"
                       alt="Microsoft Arcade Code"
+                      maxW="100%"
+                      borderRadius="md"
                     />
                   </Box>
                 </VStack>
             </TabPanel>
-              <TabPanel textAlign="left">
+              <TabPanel textAlign="left" px={{ base: 1, md: 4 }}>
                 <VStack align="stretch" spacing={4} flex={1}>
                   <BodyText>
                     I have always enjoyed creating things. For as long as I can remember I have flitted between different creative projects such as crotchet, knitting, writing, video making, candle making and crafts. I find crafting to be a very relaxing and rewarding hobby, and I enjoy being able to make something with my hands.
@@ -122,7 +146,7 @@ const Home = () => {
                   />
                 </VStack>
               </TabPanel>
-              <TabPanel textAlign="left">
+              <TabPanel textAlign="left" px={{ base: 1, md: 4 }}>
                 <VStack align="stretch" spacing={4} flex={1}>
                   <BodyText>Language learning has always been an interest of mine. As a child I loved secret codes and ciphers, and working out how to decode them. Later, at school I studied French and Latin.</BodyText>
                   <BodyText>French was particularly useful as we visited France several times when I was a child and I loved being able to try and decipher all the signs and conversations around me.</BodyText>
@@ -136,7 +160,7 @@ const Home = () => {
                   </BodyText>
                 </VStack>
               </TabPanel>
-              <TabPanel textAlign="left">
+              <TabPanel textAlign="left" px={{ base: 1, md: 4 }}>
                 <VStack align="stretch" spacing={4} flex={1}>
                   <BodyText>
                     Music has always been a big part of my life. 
@@ -153,7 +177,7 @@ const Home = () => {
                   </BodyText>
                 </VStack>
               </TabPanel>
-              <TabPanel textAlign="left">
+              <TabPanel textAlign="left" px={{ base: 1, md: 4 }}>
                 <VStack align="stretch" spacing={4} flex={1}>
                   <BodyText>
                     When I was younger my father used to travel to many different places for work which perhaps inspired my interest in travelling.

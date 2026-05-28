@@ -9,7 +9,7 @@ import Programming from './components/Programming';
 function App() {
   return (
     <Router>
-      <Box minH="100vh" bg="gray.50">
+      <Box minH="100vh" bg="gray.50" overflowX="hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
