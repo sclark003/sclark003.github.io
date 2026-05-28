@@ -1,0 +1,20 @@
+HOW TO ADD A BLOG POST
+======================
+
+1. Copy welcome.md and rename it (e.g. code-club-update.md).
+   Use lowercase letters, numbers, and hyphens in the filename.
+   That filename becomes the URL: /blog/code-club-update
+
+2. Edit the top section (between the --- lines):
+   - title:   The headline shown on the site
+   - date:    Use YYYY-MM-DD format
+   - excerpt: Short summary for the blog list page
+   - draft:   Set to true to hide the post while you work on it
+
+3. Write your article below the second --- line using normal Markdown.
+
+4. Publish:
+   npm run build:pages
+   Then commit and push to GitHub (same as updating the rest of the site).
+
+Images: place files in public/images/ and reference them as /images/filename.jpg

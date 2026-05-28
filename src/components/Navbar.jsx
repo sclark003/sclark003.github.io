@@ -28,7 +28,13 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/experience', label: 'Education and Experience' },
     { path: '/programming', label: 'Programming' },
+    { path: '/blog', label: 'Blog' },
   ];
+
+  const isActive = (path) => {
+    if (path === '/') return location.pathname === '/';
+    return location.pathname === path || location.pathname.startsWith(`${path}/`);
+  };
 
   const linkStyles = (path) => ({
     px: 4,
@@ -39,9 +45,9 @@ const Navbar = () => {
       bg: 'gray.700',
       textDecoration: 'none',
     },
-    bg: location.pathname === path ? 'purple.600' : 'transparent',
-    color: location.pathname === path ? 'white' : inactiveColor,
-    fontWeight: location.pathname === path ? 'semibold' : 'normal',
+    bg: isActive(path) ? 'purple.600' : 'transparent',
+    color: isActive(path) ? 'white' : inactiveColor,
+    fontWeight: isActive(path) ? 'semibold' : 'normal',
     transition: 'all 0.2s',
   });
 
