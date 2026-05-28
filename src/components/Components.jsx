@@ -58,8 +58,20 @@ export function PageTitle({
 
 export function ExternalLinkButton({ href, children, colorScheme = 'purple', rightIcon = <ExternalLinkIcon />, variant = 'outline', ...props }) {
   return (
-    <Link href={href} isExternal _hover={{ textDecoration: 'none' }}>
-      <Button colorScheme={colorScheme} rightIcon={rightIcon} variant={variant} width="100%" {...props}>
+    <Link href={href} isExternal _hover={{ textDecoration: 'none' }} display="block" width="100%">
+      <Button
+        colorScheme={colorScheme}
+        rightIcon={rightIcon}
+        variant={variant}
+        width="100%"
+        height="auto"
+        minH="44px"
+        whiteSpace="normal"
+        py={3}
+        px={4}
+        lineHeight="short"
+        {...props}
+      >
         {children}
       </Button>
     </Link>
