@@ -4,8 +4,9 @@
     "description": "",
     "main": "script.js",
     "scripts": {
-        "dev": "vite",
+        "dev": "node scripts/prepare-vite-html.cjs && vite",
         "build": "vite build",
+        "build:pages": "node scripts/prepare-vite-html.cjs && vite build && node scripts/copy-dist-to-root.cjs",
         "preview": "vite preview",
         "start": "vite",
         "predeploy": "npm run build",
