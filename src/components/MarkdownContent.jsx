@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import {
   Box,
   Code,
@@ -8,7 +9,14 @@ import {
   Link,
   ListItem,
   OrderedList,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
   Text,
+  Th,
+  Thead,
+  Tr,
   UnorderedList,
 } from '@chakra-ui/react';
 
@@ -65,6 +73,26 @@ const components = {
   img: ({ src, alt }) => (
     <Image src={src} alt={alt || ''} maxW="100%" borderRadius="md" mb={4} mx="auto" />
   ),
+  table: ({ children }) => (
+    <TableContainer mb={6} overflowX="auto" maxW="100%" borderRadius="md" borderWidth="1px" borderColor="gray.200">
+      <Table variant="simple" size="sm">
+        {children}
+      </Table>
+    </TableContainer>
+  ),
+  thead: ({ children }) => <Thead bg="purple.50">{children}</Thead>,
+  tbody: ({ children }) => <Tbody>{children}</Tbody>,
+  tr: ({ children }) => <Tr>{children}</Tr>,
+  th: ({ children }) => (
+    <Th fontSize={{ base: 'sm', md: 'md' }} whiteSpace="nowrap" borderColor="gray.200">
+      {children}
+    </Th>
+  ),
+  td: ({ children }) => (
+    <Td fontSize={{ base: 'sm', md: 'md' }} borderColor="gray.200" fontFamily="mono">
+      {children}
+    </Td>
+  ),
   code: ({ className, children }) => {
     const isBlock = className?.startsWith('language-');
     if (isBlock) {
@@ -95,7 +123,9 @@ const components = {
 export default function MarkdownContent({ content }) {
   return (
     <Box className="blog-content">
-      <ReactMarkdown components={components}>{content}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+        {content}
+      </ReactMarkdown>
     </Box>
   );
 }
