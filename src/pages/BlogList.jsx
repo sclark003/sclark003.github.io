@@ -48,7 +48,7 @@ const BlogList = () => {
                 <Link
                   key={post.slug}
                   as={RouterLink}
-                  to={`/blog/${post.slug}`}
+                  to={`/blog/${encodeURIComponent(post.slug)}`}
                   _hover={{ textDecoration: 'none' }}
                 >
                   <Box

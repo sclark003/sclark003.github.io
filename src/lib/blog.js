@@ -24,6 +24,14 @@ function parseFrontmatter(raw) {
   return { data, content: match[2].trim() };
 }
 
+function parseDateTimestamp(dateString) {
+  if (!dateString || typeof dateString !== 'string') return 0;
+  const trimmed = dateString.trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) return 0;
+  const time = Date.parse(`${trimmed}T12:00:00`);
+  return Number.isNaN(time) ? 0 : time;
+}
+
 function parsePost(filePath, raw) {
   const { data, content } = parseFrontmatter(raw);
   const slug = filePath.split('/').pop().replace(/\.md$/, '');
@@ -32,6 +40,7 @@ function parsePost(filePath, raw) {
     slug,
     title: data.title || slug,
     date: data.date || '',
+    dateTimestamp: parseDateTimestamp(data.date),
     excerpt: data.excerpt || '',
     draft: Boolean(data.draft),
     content,
@@ -41,7 +50,12 @@ function parsePost(filePath, raw) {
 const allPosts = Object.entries(postFiles)
   .map(([path, raw]) => parsePost(path, raw))
   .filter((post) => !post.draft && !post.slug.startsWith('_'))
-  .sort((a, b) => new Date(b.date) - new Date(a.date));
+  .sort((a, b) => {
+    if (b.dateTimestamp !== a.dateTimestamp) {
+      return b.dateTimestamp - a.dateTimestamp;
+    }
+    return a.title.localeCompare(b.title);
+  });
 
 export function getAllPosts() {
   return allPosts;
@@ -52,8 +66,8 @@ export function getPostBySlug(slug) {
 }
 
 export function formatPostDate(dateString) {
-  if (!dateString) return '';
-  return new Date(dateString).toLocaleDateString('en-GB', {
+  if (!dateString || parseDateTimestamp(dateString) === 0) return '';
+  return new Date(`${dateString.trim()}T12:00:00`).toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',

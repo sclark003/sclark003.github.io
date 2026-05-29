@@ -14,7 +14,8 @@ import MarkdownContent from '../components/MarkdownContent';
 import { formatPostDate, getPostBySlug } from '../lib/blog';
 
 const BlogPost = () => {
-  const { slug } = useParams();
+  const { slug: slugParam } = useParams();
+  const slug = decodeURIComponent(slugParam);
   const post = getPostBySlug(slug);
   const mutedColor = useColorModeValue('gray.600', 'gray.400');
 
