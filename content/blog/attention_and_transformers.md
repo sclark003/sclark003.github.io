@@ -1,4 +1,9 @@
-# Attention and Transformers
+---
+title: Attention and Transformers
+date: 2026-05-
+excerpt: Attention allows a model to focus on the most relevant words when processing a sentence.
+draft: true
+---
 
 ## The Problem
 

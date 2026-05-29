@@ -26,6 +26,3 @@ Around 2015-2016, NLP research was heavily focused on CNNs and RNNs for tasks li
 - A carefully engineered bag-of-words style approach could remain highly competitive. 
 - Simple baselines were often underestimated
 - Computational efficiency was a major research goal, not just accuracy.
-
-
-5. Run `npm run build:pages` and push to GitHub

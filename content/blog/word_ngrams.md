@@ -1,4 +1,9 @@
-# Word N-Grams
+---
+title: Word N-Grams
+date: 2026-05-
+excerpt: An n-gram is a sequence of n consecutive words.
+draft: true
+---
 
 ## What Are N-Grams?
 
