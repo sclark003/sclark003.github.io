@@ -1,6 +1,8 @@
 ---
 title: Attention and Transformers
-date: 2026-05-
+topic: nlp
+order: 5
+date: 2026-05-26
 excerpt: Attention allows a model to focus on the most relevant words when processing a sentence.
 draft: true
 ---

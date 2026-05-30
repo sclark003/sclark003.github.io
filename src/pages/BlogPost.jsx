@@ -11,7 +11,7 @@ import {
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { SectionCard } from '../components/Components';
 import MarkdownContent from '../components/MarkdownContent';
-import { formatPostDate, getPostBySlug } from '../lib/blog';
+import { formatPostDate, getPostBySlug, getTopicTitle } from '../lib/blog';
 
 const BlogPost = () => {
   const { slug: slugParam } = useParams();
@@ -59,7 +59,9 @@ const BlogPost = () => {
 
         <SectionCard>
           <Text fontSize="sm" color={mutedColor} mb={2}>
-            {formatPostDate(post.date)}
+            {getTopicTitle(post.topic)}
+            {post.order != null ? ` · Note ${post.order}` : ''}
+            {post.date ? ` · ${formatPostDate(post.date)}` : ''}
           </Text>
           <Heading
             as="h1"
@@ -69,6 +71,7 @@ const BlogPost = () => {
             bgGradient="linear(to-r, purple.600, pink.600)"
             bgClip="text"
           >
+            {post.order != null ? `${post.order}. ` : ''}
             {post.title}
           </Heading>
           <MarkdownContent content={post.content} />

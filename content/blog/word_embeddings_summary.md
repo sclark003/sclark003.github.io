@@ -1,5 +1,7 @@
 ---
 title: Word Embeddings: A Practical Summary
+topic: nlp
+order: 3
 date: 2026-05-24
 excerpt: Word embeddings are dense numerical vector representations of words that capture their meaning based on how they are used in language.
 draft: false

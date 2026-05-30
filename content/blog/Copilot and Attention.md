@@ -1,5 +1,7 @@
 ---
 title: Why Does Copilot 'Forget' Instructions? Part 2: Attention
+topic: copilot
+order: 4
 date: 2026-05-21
 excerpt: How Attention Affects Copilot Instructions
 draft: true

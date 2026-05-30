@@ -1,5 +1,7 @@
 ---
 title: Using Github Copilot
+topic: copilot
+order: 1
 date: 2026-05-11
 excerpt: Setting up Github Copilot
 draft: false

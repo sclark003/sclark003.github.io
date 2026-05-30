@@ -1,6 +1,8 @@
 ---
 title: Word N-Grams
-date: 2026-05-
+topic: nlp
+order: 1
+date: 2026-05-22
 excerpt: An n-gram is a sequence of n consecutive words.
 draft: true
 ---

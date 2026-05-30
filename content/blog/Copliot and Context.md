@@ -1,5 +1,7 @@
 ---
 title: Why Does Copilot 'Forget' Instructions? Part 1: Context
+topic: copilot
+order: 3
 date: 2026-05-18
 excerpt: How Context Affects Copilot Instructions
 draft: false

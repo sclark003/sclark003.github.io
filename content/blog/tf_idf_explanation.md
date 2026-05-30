@@ -1,5 +1,7 @@
 ---
 title: Term Frequency-Inverse Document Frequency
+topic: nlp
+order: 2
 date: 2026-05-20
 excerpt: Before word embeddings and transformers became dominant, TF-IDF was one of the most widely used features for text classification, search engines, and information retrieval.
 draft: false

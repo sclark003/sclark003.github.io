@@ -1,5 +1,7 @@
 ---
 title: Context and Commands
+topic: copilot
+order: 2
 date: 2026-05-18
 excerpt: Using context and commands in Github Copilot
 draft: false

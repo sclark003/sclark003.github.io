@@ -10,13 +10,14 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { PageTitle, SectionCard } from '../components/Components';
-import { formatPostDate, getAllPosts } from '../lib/blog';
+import { getNotesByTopic } from '../lib/blog';
 
 const BlogList = () => {
-  const posts = getAllPosts();
+  const sections = getNotesByTopic();
   const cardHoverBg = useColorModeValue('purple.50', 'gray.700');
   const borderColor = useColorModeValue('gray.200', 'gray.600');
   const mutedColor = useColorModeValue('gray.600', 'gray.400');
+  const sectionHeadingColor = useColorModeValue('purple.800', 'purple.200');
 
   return (
     <Box
@@ -35,43 +36,62 @@ const BlogList = () => {
             mb={8}
             fontSize={{ base: 'md', md: 'lg' }}
           >
-            Notes on AI, machine learning, and tools I am learning.
+            Notes on AI, machine learning, and tools I am learning — grouped by topic.
           </Text>
 
-          {posts.length === 0 ? (
+          {sections.length === 0 ? (
             <Text textAlign="center" color={mutedColor}>
               No notes yet. Add a Markdown file to the content/blog folder to get started.
             </Text>
           ) : (
-            <VStack align="stretch" spacing={4}>
-              {posts.map((post) => (
-                <Link
-                  key={post.slug}
-                  as={RouterLink}
-                  to={`/notes/${encodeURIComponent(post.slug)}`}
-                  _hover={{ textDecoration: 'none' }}
-                >
-                  <Box
-                    p={{ base: 4, md: 5 }}
-                    borderWidth="1px"
-                    borderColor={borderColor}
-                    borderRadius="lg"
-                    transition="all 0.2s"
-                    _hover={{ bg: cardHoverBg, borderColor: 'purple.300', transform: 'translateY(-2px)' }}
+            <VStack align="stretch" spacing={8}>
+              {sections.map((section) => (
+                <Box key={section.id}>
+                  <Heading
+                    as="h2"
+                    size="md"
+                    mb={4}
+                    color={sectionHeadingColor}
+                    borderBottomWidth="2px"
+                    borderColor="purple.200"
+                    pb={2}
                   >
-                    <Text fontSize="sm" color={mutedColor} mb={1}>
-                      {formatPostDate(post.date)}
-                    </Text>
-                    <Heading as="h2" size="md" mb={2} color="purple.700">
-                      {post.title}
-                    </Heading>
-                    {post.excerpt && (
-                      <Text color={mutedColor} lineHeight="tall">
-                        {post.excerpt}
-                      </Text>
-                    )}
-                  </Box>
-                </Link>
+                    {section.title}
+                  </Heading>
+                  <VStack align="stretch" spacing={3}>
+                    {section.posts.map((post) => (
+                      <Link
+                        key={post.slug}
+                        as={RouterLink}
+                        to={`/notes/${encodeURIComponent(post.slug)}`}
+                        _hover={{ textDecoration: 'none' }}
+                      >
+                        <Box
+                          p={{ base: 4, md: 5 }}
+                          borderWidth="1px"
+                          borderColor={borderColor}
+                          borderRadius="lg"
+                          transition="all 0.2s"
+                          _hover={{
+                            bg: cardHoverBg,
+                            borderColor: 'purple.300',
+                            transform: 'translateY(-2px)',
+                          }}
+                        >
+                          <Heading as="h3" size="md" color="purple.700">
+                            {post.order != null ? `${post.order}. ` : ''}
+                            {post.title}
+                          </Heading>
+                          {post.excerpt && (
+                            <Text color={mutedColor} lineHeight="tall" mt={2}>
+                              {post.excerpt}
+                            </Text>
+                          )}
+                        </Box>
+                      </Link>
+                    ))}
+                  </VStack>
+                </Box>
               ))}
             </VStack>
           )}
