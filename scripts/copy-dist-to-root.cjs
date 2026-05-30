@@ -26,8 +26,13 @@ function replaceDir(src, dest) {
   copyDir(src, dest);
 }
 
-fs.copyFileSync(path.join(dist, 'index.html'), path.join(root, 'index.html'));
+const builtIndex = path.join(dist, 'index.html');
+const rootIndex = path.join(root, 'index.html');
+const root404 = path.join(root, '404.html');
+
+fs.copyFileSync(builtIndex, rootIndex);
+fs.copyFileSync(builtIndex, root404);
 replaceDir(assetsSrc, assetsDest);
 replaceDir(publicImages, imagesDest);
 
-console.log('Copied build output and images to site root for GitHub Pages.');
+console.log('Copied build output, 404.html, and images to site root for GitHub Pages.');
