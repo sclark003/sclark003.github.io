@@ -28,19 +28,19 @@ const BlogList = () => {
     >
       <Container maxW="800px" px={{ base: 4, md: 6 }} py={{ base: 4, md: 8 }}>
         <SectionCard>
-          <PageTitle gradient="linear(to-r, purple.600, pink.600)">Blog</PageTitle>
+          <PageTitle gradient="linear(to-r, purple.600, pink.600)">Study Notes</PageTitle>
           <Text
             textAlign="center"
             color={mutedColor}
             mb={8}
             fontSize={{ base: 'md', md: 'lg' }}
           >
-            Thoughts on tech, projects, and everything in between.
+            Notes on AI, machine learning, and tools I am learning.
           </Text>
 
           {posts.length === 0 ? (
             <Text textAlign="center" color={mutedColor}>
-              No posts yet. Add a Markdown file to the content/blog folder to get started.
+              No notes yet. Add a Markdown file to the content/blog folder to get started.
             </Text>
           ) : (
             <VStack align="stretch" spacing={4}>
@@ -48,7 +48,7 @@ const BlogList = () => {
                 <Link
                   key={post.slug}
                   as={RouterLink}
-                  to={`/blog/${encodeURIComponent(post.slug)}`}
+                  to={`/notes/${encodeURIComponent(post.slug)}`}
                   _hover={{ textDecoration: 'none' }}
                 >
                   <Box

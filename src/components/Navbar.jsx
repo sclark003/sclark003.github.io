@@ -28,7 +28,7 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/experience', label: 'Education and Experience' },
     { path: '/programming', label: 'Programming' },
-    { path: '/blog', label: 'Blog' },
+    { path: '/notes', label: 'Study Notes' },
   ];
 
   const isActive = (path) => {

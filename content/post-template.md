@@ -1,7 +1,7 @@
 ---
 title: Your Post Title Here
 date: 2026-05-28
-excerpt: One sentence summary shown on the blog list page.
+excerpt: One sentence summary shown on the study notes list page.
 draft: true
 ---
 

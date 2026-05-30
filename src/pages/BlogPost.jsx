@@ -27,8 +27,8 @@ const BlogPost = () => {
             <Heading size="lg" mb={4}>
               Post not found
             </Heading>
-            <Button as={RouterLink} to="/blog" leftIcon={<ArrowBackIcon />} colorScheme="purple">
-              Back to blog
+            <Button as={RouterLink} to="/notes" leftIcon={<ArrowBackIcon />} colorScheme="purple">
+              Back to study notes
             </Button>
           </SectionCard>
         </Container>
@@ -47,14 +47,14 @@ const BlogPost = () => {
       <Container maxW="800px" px={{ base: 4, md: 6 }} py={{ base: 4, md: 8 }}>
         <Button
           as={RouterLink}
-          to="/blog"
+          to="/notes"
           variant="ghost"
           leftIcon={<ArrowBackIcon />}
           colorScheme="purple"
           mb={4}
           size={{ base: 'sm', md: 'md' }}
         >
-          All posts
+          All study notes
         </Button>
 
         <SectionCard>
