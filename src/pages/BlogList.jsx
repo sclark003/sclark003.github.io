@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
   Box,
   Container,
   Heading,
@@ -18,6 +23,7 @@ const BlogList = () => {
   const borderColor = useColorModeValue('gray.200', 'gray.600');
   const mutedColor = useColorModeValue('gray.600', 'gray.400');
   const sectionHeadingColor = useColorModeValue('purple.800', 'purple.200');
+  const accordionBg = useColorModeValue('white', 'gray.700');
 
   return (
     <Box
@@ -44,56 +50,66 @@ const BlogList = () => {
               No notes yet. Add a Markdown file to the content/blog folder to get started.
             </Text>
           ) : (
-            <VStack align="stretch" spacing={8}>
+            <Accordion allowMultiple reduceMotion>
               {sections.map((section) => (
-                <Box key={section.id}>
-                  <Heading
-                    as="h2"
-                    size="md"
-                    mb={4}
-                    color={sectionHeadingColor}
-                    borderBottomWidth="2px"
-                    borderColor="purple.200"
-                    pb={2}
-                  >
-                    {section.title}
-                  </Heading>
-                  <VStack align="stretch" spacing={3}>
-                    {section.posts.map((post) => (
-                      <Link
-                        key={post.slug}
-                        as={RouterLink}
-                        to={`/notes/${encodeURIComponent(post.slug)}`}
-                        _hover={{ textDecoration: 'none' }}
-                      >
-                        <Box
-                          p={{ base: 4, md: 5 }}
-                          borderWidth="1px"
-                          borderColor={borderColor}
-                          borderRadius="lg"
-                          transition="all 0.2s"
-                          _hover={{
-                            bg: cardHoverBg,
-                            borderColor: 'purple.300',
-                            transform: 'translateY(-2px)',
-                          }}
+                <AccordionItem
+                  key={section.id}
+                  border="1px"
+                  borderColor={borderColor}
+                  borderRadius="lg"
+                  mb={3}
+                  overflow="hidden"
+                  bg={accordionBg}
+                >
+                  <AccordionButton py={4} _expanded={{ bg: 'purple.50' }}>
+                    <Box flex="1" textAlign="left">
+                      <Heading as="h2" size="md" color={sectionHeadingColor}>
+                        {section.title}
+                      </Heading>
+                      <Text fontSize="sm" color={mutedColor} mt={1}>
+                        {section.posts.length} note{section.posts.length === 1 ? '' : 's'}
+                      </Text>
+                    </Box>
+                    <AccordionIcon color="purple.500" />
+                  </AccordionButton>
+                  <AccordionPanel pb={4} pt={2}>
+                    <VStack align="stretch" spacing={3}>
+                      {section.posts.map((post) => (
+                        <Link
+                          key={post.slug}
+                          as={RouterLink}
+                          to={`/notes/${encodeURIComponent(post.slug)}`}
+                          _hover={{ textDecoration: 'none' }}
                         >
-                          <Heading as="h3" size="md" color="purple.700">
-                            {post.order != null ? `${post.order}. ` : ''}
-                            {post.title}
-                          </Heading>
-                          {post.excerpt && (
-                            <Text color={mutedColor} lineHeight="tall" mt={2}>
-                              {post.excerpt}
-                            </Text>
-                          )}
-                        </Box>
-                      </Link>
-                    ))}
-                  </VStack>
-                </Box>
+                          <Box
+                            p={{ base: 4, md: 5 }}
+                            borderWidth="1px"
+                            borderColor={borderColor}
+                            borderRadius="lg"
+                            transition="all 0.2s"
+                            _hover={{
+                              bg: cardHoverBg,
+                              borderColor: 'purple.300',
+                              transform: 'translateY(-2px)',
+                            }}
+                          >
+                            <Heading as="h3" size="md" color="purple.700">
+                              {post.order != null ? `${post.order}. ` : ''}
+                              {post.title}
+                            </Heading>
+                            {post.excerpt && (
+                              <Text color={mutedColor} lineHeight="tall" mt={2}>
+                                {post.excerpt}
+                              </Text>
+                            )}
+                          </Box>
+                        </Link>
+                      ))}
+                    </VStack>
+                  </AccordionPanel>
+                </AccordionItem>
               ))}
-            </VStack>
+            </Accordion>
           )}
         </SectionCard>
       </Container>
