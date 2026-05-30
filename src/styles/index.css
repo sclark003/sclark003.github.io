@@ -25,6 +25,20 @@ img {
   height: auto;
 }
 
+.blog-content .math-block .katex-display {
+  margin: 0;
+}
+
+.blog-content .katex {
+  font-size: 1.05em;
+}
+
+.blog-content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+
 @media (max-width: 768px) {
   .chakra-tabs__tab {
     min-height: 44px;

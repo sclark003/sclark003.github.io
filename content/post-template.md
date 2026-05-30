@@ -31,6 +31,20 @@ Use a smaller heading when you need to break up a longer section.
 
 ![Image description](/images/your-image.jpg)
 
+Inline math: `$E = mc^2$` or `\(E = mc^2\)`
+
+Display math:
+
+```math
+TF(t,d) = \frac{\text{count of term } t \text{ in document } d}{\text{total terms in } d}
+```
+
+Or use `$$` on separate lines:
+
+$$
+IDF(t) = \log\left(\frac{N}{DF(t)}\right)
+$$
+
 ---
 
 ## Before publishing

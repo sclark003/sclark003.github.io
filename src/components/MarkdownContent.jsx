@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 import {
   Box,
   Code,
@@ -19,6 +23,29 @@ import {
   Tr,
   UnorderedList,
 } from '@chakra-ui/react';
+
+function preprocessMath(content) {
+  return content
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => `$${math.trim()}$`)
+    .replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => `\n$$\n${math.trim()}\n$$\n`);
+}
+
+function MathBlock({ math }) {
+  const html = katex.renderToString(math.trim(), {
+    displayMode: true,
+    throwOnError: false,
+  });
+
+  return (
+    <Box
+      className="math-block"
+      mb={4}
+      overflowX="auto"
+      textAlign="center"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
+}
 
 const components = {
   h1: ({ children }) => (
@@ -94,6 +121,12 @@ const components = {
     </Td>
   ),
   code: ({ className, children }) => {
+    const language = className?.replace('language-', '');
+
+    if (language === 'math') {
+      return <MathBlock math={String(children)} />;
+    }
+
     const isBlock = className?.startsWith('language-');
     if (isBlock) {
       return (
@@ -112,6 +145,7 @@ const components = {
         </Box>
       );
     }
+
     return (
       <Code fontSize="0.9em" px={1} py={0.5}>
         {children}
@@ -123,8 +157,12 @@ const components = {
 export default function MarkdownContent({ content }) {
   return (
     <Box className="blog-content">
-      <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
-        {content}
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm, remarkMath]}
+        rehypePlugins={[rehypeKatex]}
+        components={components}
+      >
+        {preprocessMath(content)}
       </ReactMarkdown>
     </Box>
   );
