@@ -1,9 +1,9 @@
 ---
 title: Bag of Tricks for Efficient Text Classification 
-topic: nlp
-order: 4
+topic: nlp papers
+order: 1
 date: 2026-05-29
-excerpt: Overview of the paper by Joulin et al. (fasttext, 2016)
+excerpt: Overview of the paper by Joulin et al. (fastText, 2016)
 draft: false
 ---
 

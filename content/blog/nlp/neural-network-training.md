@@ -1,5 +1,5 @@
 ---
-title: Underfitting and Overfitting in ML
+title: Neural Network Training
 topic: nlp
 order: 6
 date: 2026-05-30
@@ -7,11 +7,15 @@ excerpt: Training a neural network involves optimising its weights so prediction
 brain.
 draft: false
 ---
-Machine learning models should learn useful patterns from training data. When a model learns too little or too much, we get underfitting or overfitting.
+Training a neural network involves optimizing its weights so predictions become increasingly accurate. This is achieved through gradient-based optimisation methods.
 
-- **Underfitting** means that the model is too simple and does not cover all real patterns in the data.
-- **Overfitting** means that the model learns not just the underlying pattern, but also noise or random quirks in the training data. The model memorises training data
-- A good model finds the right spot, it is complex enough to capture real patterns, but not so complex that it “memorises” noise
+The process begins with a forward pass, where inputs propagate through the network to produce predictions. The predictions are compared to the true labels using a loss function. The loss quantifies how wrong the network is.
+
+Backpropagation computes gradients of the loss with respect to every parameter in the network using the chain rule from calculus. These gradients indicate how weights should change to reduce error.
+
+Gradient descent then updates weights incrementally. The learning rate is crucial because it determines step size:
+- Too small → slow learning
+- Too large → unstable learning
 
 ## Underfitting in NLP
 The model fails to learn the grammar, semantics, or context of the language, resulting in blind guessing.

@@ -8,5 +8,10 @@
     "id": "nlp",
     "title": "Natural Language Processing",
     "order": 2
+  },
+  {
+    "id": "nlp papers",
+    "title": "NLP Academic Papers",
+    "order": 3
   }
 ]

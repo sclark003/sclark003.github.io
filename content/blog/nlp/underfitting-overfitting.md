@@ -1,7 +1,7 @@
 ---
 title: Underfitting and Overfitting in ML
 topic: nlp
-order: 5
+order: 7
 date: 2026-05-30
 excerpt: When a model learns too little or too much, we get underfitting or overfitting.
 brain.

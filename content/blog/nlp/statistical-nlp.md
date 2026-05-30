@@ -1,22 +1,27 @@
 ---
-title: Machine Learning in NLP
+title: Statistical NLP
 topic: nlp
 order: 2
 date: 2026-05-30
-excerpt: Machine learning revolutionized NLP by replacing manually designed rules with systems that
-learn statistical patterns from data.
+excerpt: Machine learning revolutionized NLP by replacing manually designed rules with systems that learn statistical patterns from data.
 draft: false
 ---
+Early NLP relied heavily on hand-coded grammatical rules and dictionaries created by linguists. Machine learning revolutionized NLP by replacing manually designed rules with systems that learn statistical patterns from data. 
 
-Machine learning revolutionized NLP by replacing manually designed rules with systems that learn statistical patterns from data. Traditional NLP systems required extensive feature engineering, where researchers manually designed features such as word counts, suffixes, grammatical patterns, or dictionaries. These approaches worked reasonably well for limited tasks but struggled with scalability and language variability.
+## The Shift to Statistical NLP
+Traditional NLP systems required extensive feature engineering, where researchers manually designed features such as word counts, suffixes, grammatical patterns, or dictionaries. These approaches worked reasonably well for limited tasks but struggled with scalability and language variability.
 
-Machine learning models instead learn patterns automatically from examples. If given enough labelled data, models can identify relationships between words, contexts, and meanings without explicit programming. Early machine learning approaches in NLP included:
+- **The Rule-Based Era (1950s–1970s):** Early NLP relied on linguists hand-coding rules (e.g., if "X" follows "Y", do "Z"). These symbolic systems were inflexible and failed in real-world, ambiguous environments.
+- **The Statistical Revolution (1980s–1990s):** Fueled by increasing computational power and the availability of large text datasets (corpora), the field shifted to probability. Researchers began utilizing machine learning to assign weights to linguistic features, allowing systems to make soft, probabilistic decisions rather than strict true/false declarations.
+- **Key Milestones:** Pioneered by IBM’s early statistical machine translation models in the late 1980s and 1990s, followed by N-gram models and Hidden Markov Models (HMMs) used for part-of-speech tagging and speech recognition.
+
+Machine learning models instead learn patterns automatically from examples. If given enough labelled data, models can identify relationships between words, contexts, and meanings without explicit programming. These methods often relied on sparse hand-engineered features. 
+
+Early machine learning approaches in NLP included:
 - Naive Bayes
 - Logistic Regression
 - Hidden Markov Models (HMMs)
 - Conditional Random Fields (CRFs)
-
-These methods often relied on sparse hand-engineered features. 
 
 ## Naive Bayes Classifiers
 Naive Bayes is a machine learning classification algorithm that predicts the category of a data point using probability. It  assumes that all features are independent of each other. Naive Bayes performs well in many real-world applications such as spam filtering, document categorisation and sentiment analysis.
@@ -40,10 +45,7 @@ $$
 Logistic Regression is a supervised machine learning algorithm used for classification problems. Unlike linear regression, which predicts continuous values it predicts the probability that an input belongs to a specific class. 
 
 ### How It Works
-It calculates the probability of an input text belonging to a specific class, e.g:
-$$
- \(P(\text{Positive} \vert{} \text{Text})\)) by passing a linear combination of its features through a sigmoid function.
-$$
+It calculates the probability of an input text belonging to a specific class, e.g: \(P(\text{Positive} \vert{} \text{Text})\)) by passing a linear combination of its features through a sigmoid function.
 - It is used for binary classification where the output can be one of two possible categories such as Yes/No, True/False or 0/1.
 - It uses sigmoid function to convert inputs into a probability value between 0 and 1.
 
@@ -62,9 +64,9 @@ A Hidden Markov Model is defined by
 
 where
 
-    AA (Transition Matrix): Probability of moving from one hidden state to another (e.g., the chance a noun follows an adjective)
-    BB (Emission Matrix): Probability of observing a symbol given a hidden state (e.g., the chance the hidden state verb generates the word "run")
-    ππ (Initial State Distribution): Probability of starting in each hidden state.
+- AA (Transition Matrix): Probability of moving from one hidden state to another (e.g., the chance a noun follows an adjective)
+- BB (Emission Matrix): Probability of observing a symbol given a hidden state (e.g., the chance the hidden state verb generates the word "run")
+- ππ (Initial State Distribution): Probability of starting in each hidden state.
 
 ### Conditional Random Fields
 Conditional Random Fields (CRFs) are widely used in NLP for Part-of-Speech (POS) tagging where each word in a sentence is assigned a grammatical label such as noun, verb or adjective. As probabilistic sequence-labeling models, CRFs capture contextual and dependency relationships between neighboring words and tags, allowing more accurate labeling of entire sentences rather than individual words.
@@ -82,21 +84,3 @@ where
 
  Instead of modeling the underlying joint distribution like Hidden Markov Models (HMMs), CRFs model the conditional probability \(P(Y\vert{}X)\) directly, allowing them to handle complex, overlapping features without making strict independence assumptions.
 
-## Rise of Neural Networks
-
-Neural networks improved performance because they learn dense distributed representations automatically.
-
-Deep learning brought major improvements because:
-- Large datasets became available
-- GPUs enabled faster training
-- Better optimisation techniques emerged
-- Larger neural architectures became feasible
-
-Modern NLP systems are now typically pretrained on enormous datasets before being
-fine-tuned for specific tasks. This transfer learning approach allows models to reuse general
-language knowledge across many applications.
-
-Major breakthrough areas:
-- Speech recognition
-- Computer vision
-- Machine translation
