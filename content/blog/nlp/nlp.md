@@ -18,6 +18,7 @@ NLP pipelines often involve several stages:
 - Semantic analysis (meaning)
 - Pragmatic understanding (context and intention)
 
+---
 ## Challenges in NLP
 
 A major challenge in NLP is that language understanding often requires world knowledge and commonsense reasoning. For example:
@@ -27,6 +28,7 @@ A major challenge in NLP is that language understanding often requires world kno
 Humans understand “it” refers to the trophy, but this requires reasoning about object size and
 physical relationships.
 
+---
 ### Ambiguity
 
 Language can have multiple meanings at different levels.
@@ -43,14 +45,17 @@ Sentence structures can be unclear. For example, “I saw the man with the teles
 
 Sentence meaning itself can be unclear. For example, “Visiting relatives can be annoying.”
 
+---
 ### Dynamic Nature of Language
 
 Language constantly evolves, e.g. slang, internet abbreviations, new terminology. This means that models will struggle with new language and data needs to be updated to keep up with this.
 
+---
 ### Noisy Data
 
 Data used to train models may not be perfect text. Human text often contains things like typos, emojis, informal grammar and abbreviations. E.g. “omg that movie was sooo good 😭”
 
+---
 ### Zipf's Law
 Zipf's law describes the relationship between the frequency of words in language corpus and their rank in a frequency sorted list. In natural language texts, it has been observed that:
 

@@ -10,6 +10,7 @@ draft: false
 
 The 2000s ushered in the era of deep learning, significantly impacting NLP. These complex algorithms, inspired by the human brain, became the foundation of deep learning advancements in NLP.
 
+---
 ## Rise of Neural Networks
 
 Neural networks improved performance because they learn dense distributed representations automatically.
@@ -29,6 +30,7 @@ Major breakthrough areas:
 - Computer vision
 - Machine translation
 
+---
 ## What are Neural Networks?
 
 Neural networks are computational systems inspired loosely by biological neurons in the human brain. They consist of interconnected layers of artificial neurons that transform input data into useful representations through weighted connections.
@@ -50,6 +52,7 @@ This process is repeated across many iterations until performance improves.
 
 The depth of a network refers to the number of hidden layers. Deep networks are powerful because they can model highly complex non-linear relationships, but deeper networks are also harder to train due to optimisation challenges such as vanishing gradients.
 
+---
 ## Artificial Neuron
 
 An artificial neuron is the fundamental mathematical or physical building block of artificial neural networks (ANNs) and modern deep learning. Designed to loosely mimic the information-processing capabilities of biological brain cells, it receives inputs, calculates their significance, and passes the result onward.
@@ -71,6 +74,7 @@ Learning = adjusting weights to reduce error.
 - Hidden Layers- Learn intermediate representations/features.
 - Output Layer- Produces final prediction.
 
+---
 ## Perceptrons
 
 The perceptron was one of the earliest neural models and represents the foundation of modern neural networks. Introduced by Frank Rosenblatt in the 1950s, it was designed as a simple binary classifier capable of learning decision boundaries from data. 
@@ -104,6 +108,7 @@ Cannot solve:
 - XOR
 because XOR is not linearly separable.
 
+---
 ## Multi-Layer Neural Networks
 
 Multi-layer neural networks overcome the limitations of single-layer perceptrons by introducing hidden layers between input and output. These hidden layers allow networks to learn non-linear patterns and hierarchical representations.

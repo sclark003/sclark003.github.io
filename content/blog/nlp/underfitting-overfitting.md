@@ -13,6 +13,7 @@ Machine learning models should learn useful patterns from training data. When a 
 - **Overfitting** means that the model learns not just the underlying pattern, but also noise or random quirks in the training data. The model memorises training data
 - A good model finds the right spot, it is complex enough to capture real patterns, but not so complex that it “memorises” noise
 
+---
 ## Underfitting in NLP
 The model fails to learn the grammar, semantics, or context of the language, resulting in blind guessing.
 
@@ -29,6 +30,7 @@ A sentiment analysis model that predicts "neutral" for nearly every review becau
 - Increase training epochs so the model has more time to learn.
 - Improve feature representation by using pre-trained embeddings (e.g., Word2Vec, GloVe) or fine-tuning a Large Language Model (LLM)
 
+---
 ## Overfitting in NLP
 The model essentially "memorises" the exact sentences from the training set instead of learning the underlying linguistic rules.
 

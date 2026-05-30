@@ -14,8 +14,10 @@ The choice of activation function significantly affects:
 - Model stability
 - Final accuracy
 
+---
 ## Common Activation Functions
 
+---
 ### Sigmoid (Logistic Function)
 Translates incoming values into a range between \(0\) and \(1\).
 - **Formula:** \(f(x) = \frac{1}{1 + e^{-x}}\)
@@ -24,6 +26,7 @@ Translates incoming values into a range between \(0\) and \(1\).
 
 Sigmoid activation was historically popular because its outputs resemble probabilities between 0 and 1. However, sigmoid saturates for very positive or negative inputs, causing gradients to become extremely small. This contributes to the vanishing gradient problem.
 
+---
 ### Tanh (Hyperbolic Tangent)
 Similar to the sigmoid, but translates values into a range between \(-1\) and \(1\).
 - **Formula:** \(f(x) = \tanh(x)\)
@@ -32,6 +35,7 @@ Similar to the sigmoid, but translates values into a range between \(-1\) and \(
 
 Tanh improved upon sigmoid because its outputs are centered around zero, which helps optimisation. However, tanh still suffers from gradient saturation.
 
+---
 ### ReLU (Rectified Linear Unit)
 The most widely used function, primarily in the hidden layers of networks.
 - **Formula:** \(f(x) = \max(0, x)\)
@@ -60,11 +64,13 @@ Variants of ReLU include:
 - **Parametric ReLU (PReLU):**  Similar to Leaky ReLU, but treats the negative slope as a learnable parameter that the network optimizes during training.
 - **Exponential Linear Unit (ELU):** Uses an exponential curve for negative values, which helps smooth out updates and pushes mean unit activations closer to zero.
 
+---
 ### Softmax
 Softmax is different because it is typically used only in output layers for multi-class classification. It converts raw scores into normalised probabilities, allowing models to estimate class likelihoods.
 - **Formula:** Turns raw scores into probabilities that sum up to \(1.0\).
 - **Pros:** Clearly defines the probabilities for multiple distinct categories.
 
+---
 ## How to choose
 #### Hidden Layers:
 Start with **ReLU** as the default for almost all standard neural networks.

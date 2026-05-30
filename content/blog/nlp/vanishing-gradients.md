@@ -1,47 +1,31 @@
 ---
-title: Underfitting and Overfitting in ML
+title: Vanishing and Exploding Gradients
 topic: nlp
 order: 8
 date: 2026-05-30
-excerpt: When a model learns too little or too much, we get underfitting or overfitting.
+excerpt: Vanishing and exploding gradients are primary obstacles in training deep neural networks.
 brain.
 draft: false
 ---
-Machine learning models should learn useful patterns from training data. When a model learns too little or too much, we get underfitting or overfitting.
 
-- **Underfitting** means that the model is too simple and does not cover all real patterns in the data.
-- **Overfitting** means that the model learns not just the underlying pattern, but also noise or random quirks in the training data. The model memorises training data
-- A good model finds the right spot, it is complex enough to capture real patterns, but not so complex that it “memorises” noise
+Vanishing and exploding gradients are primary obstacles in training deep neural networks. They occur during backpropagation when the derivatives used to update network weights shrink exponentially toward zero or grow uncontrollably toward infinity.
 
-## Underfitting in NLP
-The model fails to learn the grammar, semantics, or context of the language, resulting in blind guessing.
+## What Causes the Problem
+During backpropagation, weight updates are calculated using the chain rule, which multiplies gradients across multiple layers. Mathematically, if you multiply many values together across a network's depth, the final gradient is a product of these derivatives:
+\(\frac{\partial L}{\partial W} = \frac{\partial L}{\partial a_L} \cdot \frac{\partial a_L}{\partial a_{L-1}} \cdot \dots \cdot \frac{\partial a_2}{\partial a_1} \cdot \frac{\partial a_1}{\partial W}\)
 
-#### Causes:
-- Using a model that is too simple for the task (e.g., trying to use a basic Naive Bayes classifier to summarize an article).
-- Feature extraction is too basic (e.g., strictly relying on bag-of-words without utilizing word embeddings or \(N\)-grams).
-- Training time is too short.
+### Vanishing Gradients
+- **What happens:** If the gradients being multiplied are smaller than \(1\) (e.g., \(0.1\)), multiplying them across dozens of layers causes the overall gradient to shrink exponentially until it approaches zero.
+- **The effect:** The weights in the earliest layers barely update, meaning the model stops learning or loses the ability to track long-term dependencies (a severe issue in RNNs).
 
-#### NLP Examples: 
-A sentiment analysis model that predicts "neutral" for nearly every review because it hasn't learned that words like "terrible" or "excellent" hold strong sentiment weight.
+### Exploding Gradients
+- **What happens:** If the derivatives being multiplied are larger than \(1\), repeated multiplication causes the gradient to grow exponentially, resulting in massive, unstable weight updates.
+- **The effect:** The model parameters oscillate wildly, often causing the loss function to diverge or resulting in \(\text{NaN}\) (Not a Number) errors because the values become too large to compute.
 
-#### How to Fix:
-- Switch to more complex model architectures (e.g., LSTMs or Transformer models like BERT).
-- Increase training epochs so the model has more time to learn.
-- Improve feature representation by using pre-trained embeddings (e.g., Word2Vec, GloVe) or fine-tuning a Large Language Model (LLM)
-
-## Overfitting in NLP
-The model essentially "memorises" the exact sentences from the training set instead of learning the underlying linguistic rules.
-
-#### Causes:
-- The dataset is too small, unrepresentative, or highly imbalanced.
-- The model has too many parameters (e.g., a massive deep neural network) relative to the amount of training data.
-- Over-training on a specific domain (e.g., a model that understands medical transcripts but fails at conversational queries).
-
-#### NLP Examples:
-A text-generation model that hallucinates random personal names or outputs exact copied sentences from the training text whenever it is prompted.
-
-#### How to Fix:
-- Dropout: Randomly ignore a percentage of neurons during training to prevent models from relying too heavily on specific pathways.
-- Data Augmentation: Expand your dataset by rephrasing, translating, or adding noise to text.
-- Early Stopping: Halt model training when performance on the validation dataset stops improving.
-- Weight Regularisation: Apply methods like L1 or L2 regularisation to penalise overly complex word-weightings in the model architecture.
+## How to Address The Problem
+Several architectural and training techniques can mitigate or solve these issues:
+- **Proper Weight Initialisation:** Initialising weights randomly with proper scaling ensures that activations and gradients remain in a stable, healthy range.
+- **Non-Saturating Activation Functions:** Functions like ReLU avoid the flat tails of older functions (like Sigmoid or Tanh), ensuring derivatives do not shrink to zero during the forward and backward passes.
+- **Gradient Clipping:** Setting a strict threshold on the maximum value a gradient can take during backpropagation prevents exploding gradients. This is heavily utilised in RNN and LSTM models.
+- **Advanced Architectures:** Using structures like Residual Networks (ResNets) in deep feedforward networks, or LSTMs/GRUs in sequence models, allows gradients to flow directly through skip connections or gating mechanisms without repeated multiplication.
+- **Batch Normalisation:** Normalising layer inputs keeps activations in check, preventing scaling issues as data propagates through the network layer.
