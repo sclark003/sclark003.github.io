@@ -9,7 +9,7 @@ draft: false
 
 ## IDE Set Up
 
-You use Github Copilot from the chat panel that appears on the right of your IDE (at least this is true for VSCode and Intelli, - I have not had it in any other IDEs).
+You use Github Copilot from the chat panel that appears on the right of your IDE (at least this is true for VSCode and Intellij - I have not had it in any other IDEs).
 
 ### Copilot Modes & Models
 

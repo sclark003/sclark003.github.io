@@ -603,9 +603,6 @@ Based on Bayes' Theorem, it calculates the probability of a data point belonging
 The algorithm uses the probability of past data to predict the class of new, unseen data. It calculates the posterior probability for each possible class and assigns the label with the highest probability.
 
 The core calculation follows this logic:
-
-\\(Posterior Probability = \\frac{Prior Probability \\times Likelihood}{Evidence}\\)
-
 $$
 Posterior Probability = \\frac{Prior Probability \\times Likelihood}{Evidence}
 $$
@@ -614,11 +611,20 @@ $$
 - Likelihood: The probability of a feature occurring given a specific class.
 - Evidence: The overall probability of the features (this is constant across all classes, so it is often ignored when comparing).
 
-## 
+### Logistic Regression
 
-## 
+Logistic Regression is a supervised machine learning algorithm used for classification problems. Unlike linear regression, which predicts continuous values it predicts the probability that an input belongs to a specific class. 
 
-## 
+It calculates the probability of an input text belonging to a specific class, e.g:
+$$
+ \\(P(\\text{Positive} \\vert{} \\text{Text})\\)) by passing a linear combination of its features through a sigmoid function.
+$$
+- It is used for binary classification where the output can be one of two possible categories such as Yes/No, True/False or 0/1.
+- It uses sigmoid function to convert inputs into a probability value between 0 and 1.
+
+###
+
+### 
 
 
 ## Rise of Neural Networks
