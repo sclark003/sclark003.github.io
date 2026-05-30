@@ -51,13 +51,13 @@ $$
 
 1. Update `title`, `topic`, `order`, and `excerpt` in the header above
 2. Set `draft: false` when you are ready to publish
-3. Save this file in `content/blog/` with a new name (e.g. `my-post-title.md`)
+3. Save this file in `content/blog/<topic>/` (e.g. `content/blog/nlp/my-post-title.md`)
 4. Add any images to `public/images/`
 5. Run `npm run build:pages` and push to GitHub
 
 ### Topic and order fields
 
-- **topic** — section id from `content/notes-topics.json` (e.g. `copilot`, `nlp`)
+- **topic** — must match the folder name and an id in `content/notes-topics.json` (e.g. `copilot`, `nlp`)
 - **order** — position within that topic (1, 2, 3…). Notes are sorted by topic, then by this number.
 
-To add a new topic section, edit `content/notes-topics.json`.
+To add a new topic section, create a matching folder under `content/blog/` and edit `content/notes-topics.json`.

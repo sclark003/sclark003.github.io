@@ -47,7 +47,7 @@ const BlogList = () => {
 
           {sections.length === 0 ? (
             <Text textAlign="center" color={mutedColor}>
-              No notes yet. Add a Markdown file to the content/blog folder to get started.
+              No notes yet. Add a Markdown file to a topic folder under content/blog/.
             </Text>
           ) : (
             <Accordion allowMultiple reduceMotion>

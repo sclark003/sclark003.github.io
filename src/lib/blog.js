@@ -1,10 +1,27 @@
-const postFiles = import.meta.glob('../../content/blog/*.md', {
+const postFiles = import.meta.glob('../../content/blog/**/*.md', {
   eager: true,
   query: '?raw',
   import: 'default',
 });
 
 import topicsConfig from '../../content/notes-topics.json';
+
+function normalizePath(filePath) {
+  return filePath.replace(/\\/g, '/');
+}
+
+function getTopicFromPath(filePath) {
+  const parts = normalizePath(filePath).split('/');
+  const blogIndex = parts.lastIndexOf('blog');
+  if (blogIndex >= 0 && parts.length > blogIndex + 2) {
+    return parts[blogIndex + 1];
+  }
+  return '';
+}
+
+function getSlugFromPath(filePath) {
+  return normalizePath(filePath).split('/').pop().replace(/\.md$/, '');
+}
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
@@ -48,12 +65,13 @@ function compareNotes(a, b) {
 
 function parsePost(filePath, raw) {
   const { data, content } = parseFrontmatter(raw);
-  const slug = filePath.split('/').pop().replace(/\.md$/, '');
+  const slug = getSlugFromPath(filePath);
+  const topicFromFolder = getTopicFromPath(filePath);
 
   return {
     slug,
     title: data.title || slug,
-    topic: data.topic || '',
+    topic: data.topic || topicFromFolder || '',
     order: typeof data.order === 'number' ? data.order : null,
     date: data.date || '',
     dateTimestamp: parseDateTimestamp(data.date),
