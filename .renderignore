@@ -1,12 +1,9 @@
 node_modules
+.dist
 dist
-.parcel-cache
-
-# Python
+.DS_Store
+*.pyc
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
 venv/
 .venv/
 .env

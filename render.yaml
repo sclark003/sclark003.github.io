@@ -1,0 +1,13 @@
+services:
+  - type: static_site
+    name: sclark003-frontend
+    env: node
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+
+  - type: web
+    name: sclark003-backend
+    env: python
+    root: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -k uvicorn.workers.UvicornWorker app:app --bind 0.0.0.0:$PORT

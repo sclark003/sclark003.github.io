@@ -120,7 +120,7 @@ where
 - X: input words
 - Y: output tags
 - f_k(): feature functions
-- \lambda_k: learned weights
+- $\lambda_k$: learned weights
 - Z(X): normalisation factor
 
 ### Strengths & Limitations
