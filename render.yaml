@@ -10,4 +10,7 @@ services:
     env: python
     root: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -k uvicorn.workers.UvicornWorker app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: WEB_CONCURRENCY
+        value: "1"
+    startCommand: gunicorn --workers 1 --threads 1 -k uvicorn.workers.UvicornWorker app:app --bind 0.0.0.0:$PORT
