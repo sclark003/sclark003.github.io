@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Programming from './components/Programming';
 import BlogList from './pages/BlogList';
 import BlogPost from './pages/BlogPost';
+import Chat from './pages/Chat';
 
 function BlogPostRedirect() {
   const { slug } = useParams();
@@ -21,6 +22,7 @@ function App() {  return (
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/programming" element={<Programming />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/notes" element={<BlogList />} />
           <Route path="/notes/:slug" element={<BlogPost />} />
           <Route path="/blog" element={<Navigate to="/notes" replace />} />

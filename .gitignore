@@ -10,4 +10,6 @@ __pycache__/
 venv/
 .venv/
 .env
+.private_docs/
+private_docs/
 .env.*
