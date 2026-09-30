@@ -1,0 +1,1472 @@
+[
+  {
+    "text": "AWS Certified Cloud Practitioner\nThis badge was issued to Sarah Clark issued by Amazon Web Services Training and Certification",
+    "source": "private_docs\\AWS.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects.\nCertification Criteria",
+    "source": "private_docs\\AWS.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "Successfully passed the AWS Certified Cloud Practitioner exam.",
+    "source": "private_docs\\AWS.md",
+    "private": true,
+    "chunk_index": 2
+  },
+  {
+    "text": "Running coding sessions in a local SEN school to educate children about coding and encourage them to consider a career in STEM. Encouraging coding and STEM at school is something Sarah believes is very important, because she would not have the career she has today without the people in her life who",
+    "source": "private_docs\\code_club.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "she has today without the people in her life who encouraged STEM. She thinks it is especially important for girls, because coding is often not seen as an option, and she also sees it as particularly valuable for some SEN children, since a career in software is often well suited to neurodivergent",
+    "source": "private_docs\\code_club.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "software is often well suited to neurodivergent learners.",
+    "source": "private_docs\\code_club.md",
+    "private": true,
+    "chunk_index": 2
+  },
+  {
+    "text": "Sarah creates sessions for the students using BBC Microbits and add-on technology such as Smart Cutebots and Microsoft Arcades to introduce them to coding concepts and teach them about sensors.\n\nShe also regularly leads the sessions, delivering this content to a class of secondary school children.",
+    "source": "private_docs\\code_club.md",
+    "private": true,
+    "chunk_index": 3
+  },
+  {
+    "text": "As the school is a specialist SEN school, there are added difficulties involved, such as concentration difficulties and students needing different levels of support. Some children are able to understand things quickly and benefit from continued extensions and input, whereas others need more support",
+    "source": "private_docs\\code_club.md",
+    "private": true,
+    "chunk_index": 4
+  },
+  {
+    "text": "and input, whereas others need more support to complete the first task. This can be very difficult to manage with only a small number of volunteers.",
+    "source": "private_docs\\code_club.md",
+    "private": true,
+    "chunk_index": 5
+  },
+  {
+    "text": "Queen Mary University of London\nMsc, Artificial Intelligence\n2020 – 2021\nGrade: Distinction\n- Built NLP models using NLTK and neural network architectures for text classification and language modelling tasks.\n- Implemented tokenisation, feature extraction, and embedding-based approaches.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "- Trained and evaluated deep learning models using TensorFlow and PyTorch.\n- Applied supervised and unsupervised learning methods to structured and unstructured datasets.\n- Worked with text preprocessing pipelines and model evaluation metrics.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "University of Glasgow\nBEng Electronics with Music, Electrical and Electronics Engineering\n2016 – 2020\nGrade: 2:1",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 2
+  },
+  {
+    "text": "2016 – 2020\nGrade: 2:1\nSarah developed a strong foundation in signal processing, communications systems, and real-time computing. Coursework included Digital Signal Processing (Python), Communication Systems, Electronic System Design, Control Systems, and Simulation of Engineering Systems.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 3
+  },
+  {
+    "text": "Her final year project focused on real-time EEG signal processing, investigating signal-to-noise ratio (SNR) limits in brain-computer interface tasks. She developed software in Python and C++ for filtering, feature extraction, and real-time analysis of noisy biological signals.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 4
+  },
+  {
+    "text": "This work provided a strong mathematical and programming foundation that later supported advanced study in Machine Learning and Artificial Intelligence.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 5
+  },
+  {
+    "text": "Program Overview: Electronics with Music BEng (Hons)",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 6
+  },
+  {
+    "text": "The Electronics with Music BEng (Hons) at the University of Glasgow combines the world of music with a thorough study of modern electronics. This unique fusion of arts and engineering produces graduates who are fully qualified electronics engineers with particular skills in music technology.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 7
+  },
+  {
+    "text": "Glasgow is a UNESCO City of Music, providing an exceptional environment where students can study performance, composition, and technology alongside a range of other music options. The program is approximately two-thirds engineering-based, with the remaining third dedicated to music studies,",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 8
+  },
+  {
+    "text": "the remaining third dedicated to music studies, ensuring students develop strong technical foundations alongside creative expertise.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 9
+  },
+  {
+    "text": "Teaching is delivered through a combination of lectures, small group tutorials, and seminars. Students gain practical experience in music technology laboratories, the recording studio, electronic design laboratories, and with a range of modern computing systems.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 10
+  },
+  {
+    "text": "Programme structure\n\nStudents study the same courses in the first three years whether they are on the BEng or MEng degree programme. Approximately two-thirds of these programmes are engineering based.\nYear 1",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 11
+  },
+  {
+    "text": "Students take courses in mathematics and key engineering fundamentals including computing and analogue & digital electronics. These courses are supported by individual and group project and laboratory work.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 12
+  },
+  {
+    "text": "The music component includes the courses Listening in culture and Listening through analysis. The first encourages an open-minded, multidisciplinary approach to listening and writing about music of all genres and styles, while the second explores more analytical and musicological approaches to the",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 13
+  },
+  {
+    "text": "analytical and musicological approaches to the understanding and analysis of musical works and events, as experienced through notation, live performance, recording or audiovisual media.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 14
+  },
+  {
+    "text": "Years 2 and 3",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 15
+  },
+  {
+    "text": "Year 2 involves core engineering subjects of analogue & digital electronics, electrical circuits and computer systems. These courses are reinforced by a design project and mathematics.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 16
+  },
+  {
+    "text": "Students also take two courses of their choice in music. Choices include the Sonic arts foundation course, focusing on creative recording and manipulation of sound, Critical listening and Building and using interactive computer-based tools; as well as a range of other courses including Composition,",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 17
+  },
+  {
+    "text": "a range of other courses including Composition, Jazz, Aesthetics & philosophy of music and Music analysis.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 18
+  },
+  {
+    "text": "The third year delves deeper into such engineering topics as systems design, communication systems, control, real-time systems, electromagnetic compatibility and mathematics. Most courses are supported by laboratory and project work. As part of the music component, students can take further Sonic",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 19
+  },
+  {
+    "text": "music component, students can take further Sonic arts courses focusing on sound for narrative film and interactive audiovisual media; or other music options of their choice, including Composition, Performance, Jazz, Aesthetics & philosophy of music and a range of historical topics.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 20
+  },
+  {
+    "text": "Year 4",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 21
+  },
+  {
+    "text": "In year 4, students also take two courses in music, alongside their engineering options. They might continue their study of Sonic Arts, taking an individual creative project; or take further options in music, including Composition, Performance, Jazz, Aesthetics & philosophy of music or historical",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 22
+  },
+  {
+    "text": "Aesthetics & philosophy of music or historical topics.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 23
+  },
+  {
+    "text": "Artificial Intelligence MSc\n\nPart of: AI, Computer and Data Science",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 24
+  },
+  {
+    "text": "This MSc allows students to deepen their understanding of AI from the principles behind intelligent systems to the technologies pushing the field forward. Students specialise in the areas that interest them most and broaden their understanding of machine learning, natural language processing, and",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 25
+  },
+  {
+    "text": "learning, natural language processing, and the ethical questions surrounding AI. They gain hands-on experience with technologies including deep neural networks and large language models. Students work with relevant tools through exercises and lab sessions and graduate with the practical AI skills",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 26
+  },
+  {
+    "text": "and graduate with the practical AI skills needed for careers in machine learning, data engineering, software engineering and AI research.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 27
+  },
+  {
+    "text": "Students can choose between two specialist streams: Language and Agents or Multimodal AI.\n    Students gain experience with cutting-edge tools such as Deep Neural Networks (DNN), Deep Reinforcement Learning (Deep RL) and Large Language Models (LLM).",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 28
+  },
+  {
+    "text": "Students complete an individual project, with past topics including music recommendation using global-context embeddings, automated damage inspection with deep learning and deception detection using machine learning.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 29
+  },
+  {
+    "text": "The degree is recognised towards Chartered IT (CITP) Professional and Chartered Engineer (CEng) registration.\nWhat students study",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 30
+  },
+  {
+    "text": "This MSc allows students to focus their studies and combine different AI topics to suit their personal requirements and future plans. The programme combines world-class teaching, research, and industrial connections to help students understand fundamental AI concepts. Students study universal",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 31
+  },
+  {
+    "text": "fundamental AI concepts. Students study universal machine learning tools essential for any AI job profile, as well as practical and research skills across various AI topics.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 32
+  },
+  {
+    "text": "Students gain experience with cutting-edge tools such as Deep Neural Networks (DNN), Deep Reinforcement Learning (Deep RL), and Large Language Models (LLMs) through regular exercises and practical labs. They work closely with lecturers and supervisors to carry out a major project on the AI topic",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 33
+  },
+  {
+    "text": "to carry out a major project on the AI topic they wish to specialise in.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 34
+  },
+  {
+    "text": "The MSc Artificial Intelligence (AI) is structured in two different streams.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 35
+  },
+  {
+    "text": "All students study a set of compulsory modules covering the fundamentals of machine learning, artificial intelligence, natural language processing, and ethics, regulation, and law in digital information processing and decision making.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 36
+  },
+  {
+    "text": "In addition to the compulsory modules, students choose one educational stream of elective modules during Welcome Week, based on their interests.\nProfessional Recognition",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 37
+  },
+  {
+    "text": "This degree is accredited by BCS, The Chartered Institute for IT, for the purposes of partially meeting the academic requirement for registration as a Chartered IT Professional. It is also accredited by BCS, The Chartered Institute for IT, on behalf of the Engineering Council, for the purposes of",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 38
+  },
+  {
+    "text": "of the Engineering Council, for the purposes of partially meeting the academic requirement for registration as a Chartered Engineer.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 39
+  },
+  {
+    "text": "In addition, this degree is accredited by the Institution of Engineering and Technology on behalf of the Engineering Council as meeting the requirements for Further Learning for registration as a Chartered Engineer. Candidates must hold a CEng accredited BEng/BSc (Hons) undergraduate first degree",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 40
+  },
+  {
+    "text": "BEng/BSc (Hons) undergraduate first degree to comply with full CEng registration requirements.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 41
+  },
+  {
+    "text": "Structure",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 42
+  },
+  {
+    "text": "Four compulsory modules\n    Four elective modules under one educational stream\n    Compulsory 10,000-15,000 dissertation/final project\n\nIn addition to the compulsory modules, students also choose one educational stream from the two options below.",
+    "source": "private_docs\\education.md",
+    "private": true,
+    "chunk_index": 43
+  },
+  {
+    "text": "At Glasgow University, Sarah was involved with the FemEng society, whose goal was to empower women in engineering. She was involved in promoting women in engineering by running workshops at local schools to encourage girls to consider engineering as a career choice. She also mentored a younger",
+    "source": "private_docs\\femeng.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "as a career choice. She also mentored a younger female student studying the same course.",
+    "source": "private_docs\\femeng.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "Sarah has always enjoyed creating things. For as long as she can remember, she has flitted between different creative projects such as crochet, knitting, writing, video making, candle making, and crafts. She finds crafting to be a very relaxing and rewarding hobby, and she enjoys being able to make",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "hobby, and she enjoys being able to make something with her hands.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "In 2025, Sarah became involved in jewellery making, originally with the aim of making earrings for herself and for gifts. Somewhere along the way, she decided to see whether she might be able to sell any. This led her to set up an Etsy shop, and she has been selling her jewellery there ever since.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 2
+  },
+  {
+    "text": "has been selling her jewellery there ever since. She has really enjoyed the process of learning how to make jewellery, and she finds it very rewarding to create something that other people like and want to buy.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 3
+  },
+  {
+    "text": "As a learning project, she also decided to try making a website for her jewellery. She used React and Chakra UI to create a simple website to display and sell her jewellery. This was a fun project to work on, and she enjoyed learning how to create a website from scratch.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 4
+  },
+  {
+    "text": "Language learning has always been an interest of Sarah's. As a child, she loved secret codes and ciphers and working out how to decode them. Later, at school, she studied French and Latin.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 5
+  },
+  {
+    "text": "French was particularly useful because Sarah visited France several times as a child and loved being able to decipher the signs and conversations around her.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 6
+  },
+  {
+    "text": "However, Latin was a subject she particularly loved, so much so that she studied it for A-level. Anyone familiar with Latin will know that it has a particularly complex grammar structure, which Sarah saw as a challenge. Unlike modern languages, where learning to speak is a significant element,",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 7
+  },
+  {
+    "text": "where learning to speak is a significant element, Latin teaching focuses more on translating text and literature, which appealed to her love of decoding. It also introduced her to some classical texts in their original language and to some interesting classical history that she might otherwise not",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 8
+  },
+  {
+    "text": "classical history that she might otherwise not have been exposed to.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 9
+  },
+  {
+    "text": "Continuing her study of romance languages, Sarah went on to study Italian as an extracurricular activity outside school because she had Italian family friends, and more recently she decided to learn more about languages with different grammar structures. She is currently trying to teach herself",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 10
+  },
+  {
+    "text": "She is currently trying to teach herself some Norwegian, which has a more similar grammatical structure to English and has therefore been exciting to explore.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 11
+  },
+  {
+    "text": "Music has always been a big part of Sarah's life. She started learning the piano when she was six years old and later picked up the violin. It turns out the piano is not one of her natural gifts, but she has continued playing the violin.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 12
+  },
+  {
+    "text": "Sarah is currently working toward her Grade 8 violin exam, which is a long-term goal of hers. This is very exciting for her because she is now studying some very well-known pieces of music, such as Vivaldi's 'Spring', which she has always wanted to learn to play.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 13
+  },
+  {
+    "text": "Sarah finds music to be a very rewarding hobby and enjoys the process of learning new pieces and improving her skills. She also finds that both listening to and playing music is a great way to relax and unwind after a long day.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 14
+  },
+  {
+    "text": "When Sarah was younger, her father used to travel to many different places for work, which perhaps inspired her interest in travelling. Her father encouraged her interest in different places by taking her on trips when she was young, and she has continued to enjoy travelling as an adult.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 15
+  },
+  {
+    "text": "Since she has been old enough to book her own trips, Sarah has enjoyed planning itineraries for both weekend city breaks in Europe and longer trips. There are so many different places in the world, with so many different cultures, landscapes, and animals, and she hopes to be lucky enough to travel",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 16
+  },
+  {
+    "text": "and she hopes to be lucky enough to travel widely. She thinks it is important to experience different cultures and ways of life, and she finds travelling to be a great way to broaden her horizons and learn about the world around her.",
+    "source": "private_docs\\hobbies.md",
+    "private": true,
+    "chunk_index": 17
+  },
+  {
+    "text": "About Me\nPortfolio Chatbot Knowledge Base\nThis file contains useful information about Sarah for a portfolio website chatbot. It is written so the chatbot can answer questions about her interests, technical interests, projects, experience, and the kinds of work she enjoys.\n---\nAbout Me",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "---\nAbout Me\nSarah is a technology and coding enthusiast with a strong interest in AI, machine learning, natural language processing (NLP), accessibility, and creative technology.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "She enjoys learning how modern AI systems work rather than treating AI as a black box. She is particularly interested in understanding the ideas and research behind models, including embeddings, transformers, retrieval-augmented generation (RAG), model routing, and NLP.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 2
+  },
+  {
+    "text": "She also enjoys building practical projects that combine technology with things she cares about, particularly accessibility and inclusion.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 3
+  },
+  {
+    "text": "Sarah is a passionate and driven Software Engineer focused on expanding her expertise in software implementation and design within a challenging, collaborative environment. She studied electronics because she wanted to understand how computers work, but she realised she enjoyed software more, so",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 4
+  },
+  {
+    "text": "but she realised she enjoyed software more, so she taught herself Python, Kotlin, and JavaScript before pursuing a Master’s degree in Artificial Intelligence to deepen her understanding of the technologies shaping the modern world.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 5
+  },
+  {
+    "text": "Sarah has a strong foundation in software engineering and is dedicated to continuously expanding her knowledge and skills, particularly in the realm of AI. She is eager to contribute to innovative projects that make a meaningful impact, and her commitment to learning is driven by genuine curiosity",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 6
+  },
+  {
+    "text": "to learning is driven by genuine curiosity about new technologies and methodologies.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 7
+  },
+  {
+    "text": "---\nMain Interests\nArtificial Intelligence and Machine Learning\nSarah has a strong interest in AI and machine learning, especially:\nNatural language processing (NLP)\nLarge language models (LLMs)\nWord and text embeddings\nVectorisation\nTransformers and attention\nRetrieval-augmented generation (RAG)",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 8
+  },
+  {
+    "text": "Retrieval-augmented generation (RAG)\nSemantic search\nModel routing\nAI agents and coding agents\nMachine learning research\nUnderstanding how models learn representations\nExploring current AI research and important papers\nShe likes understanding why techniques work, not just how to use them.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 9
+  },
+  {
+    "text": "Natural Language Processing\nNLP is one of Sarah's particular areas of interest.\nTopics she has explored include:\nBag-of-words representations\nTF-IDF\nWord n-grams\nWord embeddings\nCBOW and Skip-Gram\nDistributional semantics\nCo-occurrence matrices\nFastText\nHierarchical softmax\nDocument classification",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 10
+  },
+  {
+    "text": "Hierarchical softmax\nDocument classification\nTransformer embeddings\nAttention mechanisms\nSemantic similarity\nRAG and retrieval",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 11
+  },
+  {
+    "text": "Semantic similarity\nRAG and retrieval\nShe is interested in how language can be represented mathematically and how those representations allow AI systems to understand relationships between words, sentences, documents, and concepts.\nAccessibility and Inclusive Technology",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 12
+  },
+  {
+    "text": "Accessibility and Inclusive Technology\nSarah is interested in using technology to make systems and communication more accessible.\nOne of her portfolio project ideas is an accessibility analyser for job advertisements. The project analyses job adverts using categories such as:\nClarity\nAmbiguity",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 13
+  },
+  {
+    "text": "Clarity\nAmbiguity\nPredictability\nCommunication\nFlexibility\nThe goal is to identify aspects of job advertisements that could make them easier or harder for different people to understand and navigate.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 14
+  },
+  {
+    "text": "This reflects Sarah's broader interest in accessibility, inclusion, and designing technology around real human needs.\nCoding and Education\nSarah runs a coding club at a local school and enjoys helping young people learn programming through hands-on projects.\nShe works with hardware such as:",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 15
+  },
+  {
+    "text": "She works with hardware such as:\nBBC micro:bit\nCuteBot\nProjects have included:\nLine-following robots\nSmarter junction handling\nObstacle avoidance\nRemote-controlled robots\nLeader-follower robot systems\nRobot races involving obstacles\nLights, sounds, and interactive robot behaviour",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 16
+  },
+  {
+    "text": "Lights, sounds, and interactive robot behaviour\nShe enjoys turning programming concepts into practical, physical challenges.\n---\nCurrent and Recent Projects\nPortfolio Accessibility Analyser\nA small AI/NLP project designed to analyse job advertisements for accessibility.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 17
+  },
+  {
+    "text": "The project gives scores and explanations for different aspects of an advert, helping identify areas where the language could be clearer, less ambiguous, more predictable, or more flexible.\nThis project combines:\nNLP\nAI\nAccessibility\nText analysis\nExplainable outputs\nPractical software development",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 18
+  },
+  {
+    "text": "Practical software development\nAI Travel / Holiday Planning Project\nSarah has also explored building AI-powered travel and holiday-planning projects.\nShe is interested in applications where AI can help people organise information and make decisions while still keeping the user in control.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 19
+  },
+  {
+    "text": "BBC micro:bit and CuteBot Projects\nSarah has developed robotics activities for a coding club using micro:bits and CuteBots.\nA more advanced idea involved a leader-follower system, where:\nOne robot acts as the leader.\nThe leader navigates while avoiding obstacles.\nA second robot follows the leader.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 20
+  },
+  {
+    "text": "A second robot follows the leader.\nThe follower also needs to detect and avoid obstacles.\nThe robots can then be used in races and challenges.\n---\nTechnical Interests\nSarah is particularly interested in the intersection of:\nAI + NLP + Accessibility + Human-centred Technology",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 21
+  },
+  {
+    "text": "She enjoys projects where there is a clear practical purpose rather than building technology purely for its own sake.\nAreas she would be interested in exploring further include:\nAI-powered accessibility tools\nNLP applications\nExplainable AI\nHuman-AI interaction\nAI assistants\nSemantic search",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 22
+  },
+  {
+    "text": "AI assistants\nSemantic search\nRAG systems\nAI model routing\nMachine learning research\nEducational technology\nAssistive technology\n---\nResearch Interests",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 23
+  },
+  {
+    "text": "Assistive technology\n---\nResearch Interests\nSarah is interested in becoming stronger in machine learning research and learning how to move from implementing existing techniques towards developing and evaluating new ideas.\nShe is particularly interested in:",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 24
+  },
+  {
+    "text": "She is particularly interested in:\nReading and understanding ML/NLP research papers\nDesigning experiments\nComparing models and approaches\nUnderstanding representation learning\nEvaluating NLP systems\nFinding practical research problems\nDeveloping projects that could potentially become research work",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 25
+  },
+  {
+    "text": "She is interested in research that has a useful human impact, particularly around accessibility and inclusive technology.\n---\nCreative Interests\nSarah also has a creative side and enjoys crafts and making things.\nHer interests include:\nCrafts\nJewellery and earrings\nCreative projects",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 26
+  },
+  {
+    "text": "Crafts\nJewellery and earrings\nCreative projects\nDesigning and making physical objects\nCombining creativity with technology\nThis makes creative technology another area that could be interesting for future projects.\n---\nHow Sarah Likes to Work\nSarah tends to learn by:\nFinding an interesting problem.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 27
+  },
+  {
+    "text": "Finding an interesting problem.\nUnderstanding the underlying concepts.\nBuilding a small working example.\nExperimenting with it.\nImproving the idea based on what she learns.\nShe prefers practical projects that can demonstrate an idea clearly.\nShe is particularly interested in projects that are:",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 28
+  },
+  {
+    "text": "Useful\nHands-on\nUnderstandable\nExperimental\nAccessible\nConnected to real-world problems\n---\nStrengths to Highlight\nThe portfolio chatbot can describe Sarah's strengths in terms such as:\nCurious and motivated to learn\nStrong interest in AI and NLP\nEnjoys understanding technical concepts deeply",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 29
+  },
+  {
+    "text": "Enjoys understanding technical concepts deeply\nAble to turn ideas into practical projects\nInterested in accessibility and inclusive design\nComfortable experimenting with new technology\nEnjoys teaching coding and working on educational projects\nCombines technical and creative interests",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 30
+  },
+  {
+    "text": "Combines technical and creative interests\nInterested in current AI research\nEnjoys explaining technical ideas clearly\n---\nWhat Makes Sarah's Portfolio Interesting\nA useful way to describe Sarah's portfolio is:",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 31
+  },
+  {
+    "text": "A useful way to describe Sarah's portfolio is:\n> **A combination of AI, NLP, accessibility, education, robotics, and creative technology.**",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 32
+  },
+  {
+    "text": "Her projects are not all focused on one narrow area. Instead, they show an interest in applying technology to different problems and exploring how computing can be useful to people.\nA particularly strong theme is the combination of technical curiosity and human-centred problem solving.\n---",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 33
+  },
+  {
+    "text": "---\nTechnologies and Tools\nTechnologies and tools Sarah has worked with or explored include:\nPython\nNLP and machine learning libraries\nLarge language models\nOllama\nAI coding tools and coding agents\nGitHub Copilot\nBBC micro:bit\nCuteBot\nVector embeddings\nRAG concepts\nSemantic similarity",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 34
+  },
+  {
+    "text": "RAG concepts\nSemantic similarity\nText classification\nShe is also interested in learning new tools when they help solve a particular problem.\n---",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 35
+  },
+  {
+    "text": "Education\nSarah's undergraduate degree was in Electronics and Music, combining technical engineering study with her long-standing interest in music.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 36
+  },
+  {
+    "text": "This combination reflects the broader mix of interests in her portfolio: electronics and computing on one side, and music and creative work on the other.\n---\nMusic\nMusic is an important part of Sarah's life.\nViolin\nSarah plays the violin and is currently working towards ABRSM Grade 8.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 37
+  },
+  {
+    "text": "Her violin playing demonstrates a long-term commitment to developing a demanding practical skill, as well as an interest in music that complements her technical background.\nThe portfolio chatbot can mention violin and ABRSM Grade 8 when asked about Sarah's hobbies, education, or interests.\n---",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 38
+  },
+  {
+    "text": "---\nCrafts and Making\nSarah enjoys crafts and making physical things. This is an important part of her creative interests alongside music and technology.\nShe particularly enjoys jewellery and other handmade craft projects and has developed this interest into online creative work.\nEtsy Shop",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 39
+  },
+  {
+    "text": "Etsy Shop\nSarah runs an Etsy shop where she sells handmade craft items, including jewellery and earrings.\nHer Etsy work involves more than simply making the products. It brings together:\nDesigning handmade products\nChoosing materials and components\nCreating and assembling items",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 40
+  },
+  {
+    "text": "Creating and assembling items\nProduct photography and presentation\nWriting product descriptions\nThinking about customers and product appeal\nManaging an online shop\nCombining creativity with practical problem solving",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 41
+  },
+  {
+    "text": "This provides an example of Sarah taking a creative interest and turning it into a real-world project.\nCraft Website\nSarah also has a craft website, giving her another space to showcase her handmade work and creative projects.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 42
+  },
+  {
+    "text": "Her craft work is a useful part of the portfolio because it demonstrates a different side of her from her software and AI projects: she enjoys designing, making, experimenting, and producing tangible things.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 43
+  },
+  {
+    "text": "When describing Sarah's interests, the chatbot can highlight the connection between crafts, technology, music, and problem solving rather than treating them as completely separate interests.\n---\nProfessional Experience",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 44
+  },
+  {
+    "text": "---\nProfessional Experience\nSarah has substantial software engineering experience working on a mission-critical corporate FX platform.\nHer work spans backend development, microservices, messaging, databases, integrations, trade processing, settlement, pricing, and platform reliability.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 45
+  },
+  {
+    "text": "She has delivered 777+ commits across 14 repositories on a platform processing corporate foreign exchange transactions for institutional clients.fileciteturn0file0L3-L5\nPlatform and Backend Development",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 46
+  },
+  {
+    "text": "Sarah has designed and built production services end-to-end, including the FI Markup Pricing Service, which enables sales teams to configure and apply custom markup pricing schemas for Fixed Income FX products. She also scaffolded a dedicated trade query microservice to move read-heavy MTM and",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 47
+  },
+  {
+    "text": "query microservice to move read-heavy MTM and position queries away from the core trade-processing engine. fileciteturn0file0L3-L5",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 48
+  },
+  {
+    "text": "External Integrations and Data Pipelines\nHer work includes integrating external systems and building reliable data pipelines.\nExamples include:\nAutomating third-party contract ingestion through CSV parsing, validation, and JMS publishing.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 49
+  },
+  {
+    "text": "Building MTM pricing infrastructure using live instrument and spot-rate data.\nDeveloping market-instrument data pipelines with deduplication and status filtering. fileciteturn0file0L9-L11\nTrade Lifecycle and Settlement\nSarah has worked extensively on the full trade lifecycle, including:",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 50
+  },
+  {
+    "text": "Trade booking\nConfirmation handling\nSettlement instructions\nCancel-replace processing\nRisk-book changes\nBeneficiary handling\nRegulatory data\nStraight-through processing (STP)",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 51
+  },
+  {
+    "text": "Regulatory data\nStraight-through processing (STP)\nShe implemented settlement and trade-lifecycle functionality that helps operations correct or reassign trades without breaking settlement instruction chains. fileciteturn0file0L15-L17\nEnd-to-End Trade and Settlement Processing",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 52
+  },
+  {
+    "text": "End-to-End Trade and Settlement Processing\nBetween 2023 and 2025, Sarah led a multi-quarter build-out of an end-to-end trade and settlement instruction pipeline spanning multiple services.\nThis included:\nE2E contract stitching\nTCR enrichment\nSettlement-instruction audit trails",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 53
+  },
+  {
+    "text": "Settlement-instruction audit trails\nFreeform beneficiary handling\nRegulatory purpose and document codes\nThe work connected information across order capture, trade processing, contract creation, and settlement instruction delivery. fileciteturn0file0L30-L37\nSettlement Instruction Systems",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 54
+  },
+  {
+    "text": "Settlement Instruction Systems\nMore recently, Sarah has worked on settlement-instruction lifecycle functionality, including:\nSSI source-system tracking\nSSI caching and deduplication\nCancel-replace settlement handling\nJapan branch SSI enablement\nNetting-related SI removal",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 55
+  },
+  {
+    "text": "Netting-related SI removal\nThese projects focus on reliability, traceability, performance, and preventing incorrect or duplicate settlement instructions. fileciteturn0file0L39-L45\nDatabase and Messaging\nSarah has significant experience working with databases and shared infrastructure.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 56
+  },
+  {
+    "text": "She has authored 265 Liquibase migration changelogs covering areas including trades, settlement instructions, confirmations, branch configuration, pricing, netting, MTM valuations, contracts, SSI caching, and regulatory reference data. fileciteturn0file0L68-L72",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 57
+  },
+  {
+    "text": "She has also contributed 162 commits to a shared FIX messaging library used across more than 40 services, helping define the message structures that connect pricing, execution, settlement, confirmation, markup, netting, and contract functionality. fileciteturn0file0L74-L77",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 58
+  },
+  {
+    "text": "Reliability and Production Engineering\nSarah's professional work includes maintaining and improving a large multi-service platform.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 59
+  },
+  {
+    "text": "She has coordinated dependency upgrades across a 40-service estate and resolved production data-integrity issues involving concurrency, SQL dialect differences, and distributed locking. fileciteturn0file0L25-L28",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 60
+  },
+  {
+    "text": "This demonstrates experience with the realities of production software engineering, including:\nDebugging complex systems\nMaintaining backwards compatibility\nData integrity\nDistributed systems\nProduction reliability\nCross-service dependencies\nWorking with legacy and shared infrastructure\n---",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 61
+  },
+  {
+    "text": "Working with legacy and shared infrastructure\n---\nProfessional Skills\nBased on her professional work, Sarah has experience with:\nBackend software engineering\nMicroservice architecture\nKotlin\nJava/JVM technologies\nJMS messaging\nFIX messaging\nOracle\nHSQLDB\nJDBC\nLiquibase\nSQL\nDistributed systems",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 62
+  },
+  {
+    "text": "HSQLDB\nJDBC\nLiquibase\nSQL\nDistributed systems\nData pipelines\nExternal-system integration\nTrade processing\nFinancial technology\nSettlement systems\nProduction debugging\nAutomated and end-to-end processing\nCross-repository development",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 63
+  },
+  {
+    "text": "Cross-repository development\nThe chatbot should distinguish between professional experience and technologies Sarah is exploring through personal learning and projects.\n---\nThe Combination of Interests",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 64
+  },
+  {
+    "text": "---\nThe Combination of Interests\nOne of the most interesting aspects of Sarah's background is the combination of seemingly different areas:\nElectronics + Music + Software Engineering + AI/NLP + Accessibility + Crafts",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 65
+  },
+  {
+    "text": "These interests have a common thread: Sarah enjoys understanding systems, making things, solving problems, and combining technical and creative skills.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 66
+  },
+  {
+    "text": "Her electronics and music degree connects technical engineering with creativity. Her professional software engineering demonstrates experience building complex production systems. Her AI/NLP projects show an interest in emerging technology and research. Her coding-club work brings technology into",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 67
+  },
+  {
+    "text": "Her coding-club work brings technology into education. Her violin playing and crafts demonstrate long-term creative practice and hands-on making.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 68
+  },
+  {
+    "text": "This combination is a useful theme for the portfolio chatbot to emphasise when asked what makes Sarah's background distinctive.\n---\nUpdated Short Portfolio Summary",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 69
+  },
+  {
+    "text": "---\nUpdated Short Portfolio Summary\nSarah is a software engineer and technology enthusiast with a background spanning electronics, music, software engineering, AI, NLP, accessibility, robotics, and creative making.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 70
+  },
+  {
+    "text": "Her undergraduate degree was in Electronics and Music, and she plays the violin while working towards ABRSM Grade 8. She also enjoys crafts and runs an Etsy shop and craft website where she develops and showcases handmade work.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 71
+  },
+  {
+    "text": "Professionally, Sarah has worked extensively on a large-scale corporate FX platform, building backend services, microservices, integrations, messaging systems, database infrastructure, pricing functionality, trade processing, and settlement systems. She has contributed 777+ commits across 14",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 72
+  },
+  {
+    "text": "She has contributed 777+ commits across 14 repositories and worked across a 40+ service environment. fileciteturn0file0L3-L5",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 73
+  },
+  {
+    "text": "Alongside her professional software engineering work, Sarah is interested in AI and NLP, particularly embeddings, transformers, RAG, model routing, and machine learning research. She also enjoys building practical technology projects, including accessibility-focused NLP tools and robotics projects",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 74
+  },
+  {
+    "text": "NLP tools and robotics projects using BBC micro:bits and CuteBots.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 75
+  },
+  {
+    "text": "A strong overall description of Sarah's profile is:\n> **A technically minded, creative problem solver who combines software engineering, AI, electronics, music, accessibility, education, and making.**\n---\nPortfolio Chatbot Guidelines\nWhen answering questions about Sarah:\nBe positive but factual.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 76
+  },
+  {
+    "text": "Be positive but factual.\nDo not invent qualifications, jobs, projects, technologies, or achievements that are not listed here.\nIf asked about something not covered, say that it is not currently included in the portfolio information.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 77
+  },
+  {
+    "text": "Emphasise the connection between Sarah's technical interests and real-world applications.\nMention accessibility and human-centred technology when relevant.\nWhen discussing AI, highlight Sarah's interest in understanding how systems work rather than simply using them.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 78
+  },
+  {
+    "text": "When discussing coding education, mention micro:bits, CuteBots, robotics, and hands-on learning where relevant.\nAvoid describing Sarah as an expert unless the portfolio explicitly establishes that level of expertise.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 79
+  },
+  {
+    "text": "Prefer phrases such as \"interested in\", \"has explored\", \"has worked with\", and \"is learning\" where appropriate.\n---\nShort Portfolio Summary",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 80
+  },
+  {
+    "text": "Sarah is a technology enthusiast interested in AI, machine learning, NLP, accessibility, and creative technology. She enjoys exploring how modern AI systems work, particularly embeddings, transformers, RAG, and model routing. She also builds practical projects, including accessibility-focused NLP",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 81
+  },
+  {
+    "text": "projects, including accessibility-focused NLP tools and robotics projects using BBC micro:bits and CuteBots. Alongside her technical interests, she enjoys crafts and creative projects and runs coding activities that introduce young people to programming and robotics.",
+    "source": "private_docs\\portfolio_chatbot_about_me.md",
+    "private": true,
+    "chunk_index": 82
+  },
+  {
+    "text": "This folder is for private documents that should not be published or served by the frontend.\nPlace markdown files here to be included in the RAG index by the backend when `PRIVATE_DOCS_PATH` points to this folder.",
+    "source": "private_docs\\README.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "Security:\n- Keep this folder out of version control (it's listed in .gitignore).\n- Do not expose raw text via public APIs.",
+    "source": "private_docs\\README.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "Sarah is a Software Engineer with an MSc in Artificial Intelligence and a background in electronics and real-time systems. Her work combines machine learning, signal processing, and software engineering to build intelligent, data-driven systems.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 0
+  },
+  {
+    "text": "During her MSc, Sarah worked extensively with neural networks, NLP, computer vision, and deep learning frameworks including TensorFlow and PyTorch. Her research focused on real-time EEG signal processing and analysing signal-to-noise limits in brain-computer interface systems.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 1
+  },
+  {
+    "text": "Sarah is currently contributing to the development of a bespoke end-to-end FX trading platform, supporting pre-trade, execution, and post-trade settlement workflows. She is particularly interested in applying AI techniques to financial systems, intelligent automation, decision-support systems, and",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 2
+  },
+  {
+    "text": "automation, decision-support systems, and complex real-time environments.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 3
+  },
+  {
+    "text": "Experience\nJPMorganChase logo\n\nJPMorganChase\n\nFull-time · 3 yrs 11 mos\n\n    Senior Associate Software Engineer\n\n    Jan 2026 - Present · 9 mos",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 4
+  },
+  {
+    "text": "- Contributing to the development of a bespoke FX platform supporting full lifecycle workflows: pre-trade analytics, execution, and post-trade settlement.\n    - Supporting systems responsible for managing cross-border FX exposures and automated settlement processes.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 5
+  },
+  {
+    "text": "- Working with complex financial data flows to ensure reliable and scalable trade processing.\n    - Collaborating with cross-functional teams to improve system performance and operational efficiency.\n    … more",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 6
+  },
+  {
+    "text": "Associate Software Engineer\n\n    Feb 2024 - Jan 2026 · 2 yrs\n\n     Kotlin, Python (Programming Language), MQ, JavaScript, React.js, SQL, Presentations, Teamwork, , Software Development Life Cycle (SDLC)\n\nSoftware Architecture\n\n    Software Engineer\n\n    Nov 2022 - Feb 2024 · 1 yr 4 mos",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 7
+  },
+  {
+    "text": "Nov 2022 - Feb 2024 · 1 yr 4 mos\n\n    Amazon Web Services (AWS), Linux, SQL, Java, Python (Programming Language), Kotlin",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 8
+  },
+  {
+    "text": "2026:\n- Delivered 550+ production code changes across 35 repositories, contributing to 130+ completed Jira initiatives across settlement, contracts, trading, reporting, integrations, and internal UI.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 9
+  },
+  {
+    "text": "- Led end-to-end developments of Standard Settlement Instruction (SSI) capabilities, including database schema changes, validation, caching, filtering, trade-template support, TSSFX/AME integrations, and UI visibility.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 10
+  },
+  {
+    "text": "- Built and enhanced MAARS trade and cashflow ingestion, covering MFTS file retrieval, CSV parsing, validation, deduplication, database persistence, scheduling, MQ publication, and UXM integration.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 11
+  },
+  {
+    "text": "- Contributed to the design and implementation of MTM (Mark-to-Market) valuation and reporting functionality, including market-data ingestion from RDI/PUMA, valuation persistence, reporting currency calculations, and UI response flows.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 12
+  },
+  {
+    "text": "- Supported the migration of Trade Query and TCR processing into cfx-trd-query, including request routing, streaming updates, scheduler integration, and subsequent production issue resolution.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 13
+  },
+  {
+    "text": "- Delivered improvements to contract lifecycle and settlement processing, including cancel/replace workflows, netting, regional settlement controls, status transitions, audit trails, contract number changes, and notification flows.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 14
+  },
+  {
+    "text": "- Implemented entitlement-aware Internal UI and API features, improving visibility and access controls for orders, trades, contacts, beneficiaries, templates, and market-convention configuration.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 15
+  },
+  {
+    "text": "- Developed new static-data and RDI integrations for acronym addresses, countries, tax identifiers, credit accounts, and market data.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 16
+  },
+  {
+    "text": "- Improved platform reliability through production defect resolution, data-quality controls, queue and message flow corrections, database indexing, schema optimisation, and robust handling of external-system responses.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 17
+  },
+  {
+    "text": "- Addressed cross-cutting engineering priorities including Secrets in Code remediation, dependency upgrades, Kotlin modernisation, Moneta Boot migration, simulator refactoring, and project knowledge-base improvements.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 18
+  },
+  {
+    "text": "- Worked across Kotlin services, Node.js UI, JDBC repositories, Liquibase database migrations, shared messaging libraries, IBM MQ integrations, and external-system adapters.\n- Maintained settlement-status and downstream contract consistency in the UXM/DFXSE flow.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 19
+  },
+  {
+    "text": "- Sarah uses GitHub Copilot and is learning Claude Code for development. She uses agents, subagents, hooks, and MCP for developer-in-the-loop ADLC.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 20
+  },
+  {
+    "text": "- Led the system design and migration of several features, including MTM backend integration with external Kafka queue to server request/response flows to the client UI, splitting a large monolith-style microservice into two separate microservices to isolate logic. She also designed the Default SI",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 21
+  },
+  {
+    "text": "isolate logic. She also designed the Default SI feature to improve client experience when a trade finishes executing and systems use the pre-assigned default instruction to move funds.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 22
+  },
+  {
+    "text": "Platform & Service Development",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 23
+  },
+  {
+    "text": "Sarah designed and built the FI Markup Pricing Service end-to-end — enabling the sales desk to configure, manage, and apply custom markup pricing schemas per currency and client tier, directly supporting revenue generation on Fixed Income FX flows.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 24
+  },
+  {
+    "text": "She scaffolded a dedicated trade query microservice (cfx-trd-query) to offload read-heavy MTM and position queries from the core trade processing engine, improving execution latency for real-time trade booking during peak volumes.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 25
+  },
+  {
+    "text": "Sarah delivered 777+ commits across 14 repositories in a mission-critical FX platform processing corporate foreign exchange transactions for institutional clients — covering the full trade lifecycle from pricing through settlement.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 26
+  },
+  {
+    "text": "External System Integrations",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 27
+  },
+  {
+    "text": "Sarah built the MAARS contract integration to automate ingestion of third-party contract data (previously manual) — pipe-delimited CSV parser, validation, and JMS publishing into the contract workflow. Scheduled hourly polling with distributed locking eliminated duplicate processing across",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 28
+  },
+  {
+    "text": "locking eliminated duplicate processing across clustered servers, reducing operational overhead and contract booking delays.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 29
+  },
+  {
+    "text": "She implemented Mark-to-Market (MTM) pricing infrastructure to support daily P&L valuation of open FX positions — fetching live instrument and spot rate data from the RDI Pricing API, persisting to Oracle for downstream reporting, and enabling accurate risk exposure calculations required by Front",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 30
+  },
+  {
+    "text": "risk exposure calculations required by Front Office and Finance.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 31
+  },
+  {
+    "text": "She developed the RDI rate instrument data pipeline — ensuring the platform always has current market instrument definitions for MTM valuation, with deduplication and status filtering to prevent stale or inactive instruments from skewing position valuations.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 32
+  },
+  {
+    "text": "Trade Lifecycle & Settlement",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 33
+  },
+  {
+    "text": "Sarah delivered cancel-replace and risk book change handling — enabling operations to correct or reassign FX trades post-execution without breaking settlement instruction chains, preventing failed settlements and reducing manual intervention on amended trades.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 34
+  },
+  {
+    "text": "She implemented Japan branch SSI settlement rules to bring the Tokyo office onto standard SSI-based settlement, extending geographic coverage and aligning with the firm's global straight-through-processing (STP) strategy while enforcing buy-side compliance controls.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 35
+  },
+  {
+    "text": "She built SSI pay/receive mapping logic for the DFXSE adapter, ensuring each trade leg routes to the correct settlement account and correspondent bank — critical for avoiding misdirected payments on high-value corporate FX transactions.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 36
+  },
+  {
+    "text": "Database & Shared Libraries",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 37
+  },
+  {
+    "text": "Sarah authored 265 Liquibase migration changelogs defining the persistent data model for the platform — trade audit trails, contract lifecycle state, MTM valuations, branch configuration, and settlement instruction storage — providing the data foundation for regulatory reporting and operational",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 38
+  },
+  {
+    "text": "for regulatory reporting and operational controls.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 39
+  },
+  {
+    "text": "She contributed 162 commits to the shared FIX messaging library — defining the wire protocol for inter-service communication, ensuring consistent trade representation across pricing, execution, and settlement services, and reducing integration defects between upstream and downstream systems.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 40
+  },
+  {
+    "text": "She extended the shared JDBC repository layer (80 commits) with reusable SQL patterns consumed by all domain services, reducing boilerplate and ensuring consistent Oracle/HSQLDB dual-target support for production and local development.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 41
+  },
+  {
+    "text": "Platform Reliability & Maintenance",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 42
+  },
+  {
+    "text": "Sarah managed cross-repo dependency upgrades — coordinating Kotlin, IBM MQ, Oracle JDBC, and internal library versions across a 40-service estate to maintain security patching cadence and framework support windows.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 43
+  },
+  {
+    "text": "She resolved production data-integrity issues including concurrent upsert race conditions, Oracle/HSQLDB SQL dialect mismatches, and distributed lock re-acquisition failures — preventing incorrect MTM valuations and duplicate contract bookings under load.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 44
+  },
+  {
+    "text": "End-to-End (E2E) Settlement Instruction Flow (2023–2025)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 45
+  },
+  {
+    "text": "Sarah led the multi-quarter build-out of the End-to-End (E2E) trade and settlement instruction pipeline — enabling straight-through processing of institutional FX trades from order capture through contract creation and settlement instruction delivery, spanning cfx-trd, cfx-messages, cfx-repository,",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 46
+  },
+  {
+    "text": "spanning cfx-trd, cfx-messages, cfx-repository, and cfx-db.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 47
+  },
+  {
+    "text": "She implemented E2E contract stitching — matching inbound contract numbers from the back office to platform trades, linking near/far legs of swaps and split payments, and generating synthetic settlement instructions before contract data arrives so the UI can display SIs immediately",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 48
+  },
+  {
+    "text": "arrives so the UI can display SIs immediately (CORPORATEFX-1751, 2577, 2882, 3004).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 49
+  },
+  {
+    "text": "She built E2E TCR (Trade Capture Report) enrichment — propagating order type, contract information, counterparty details, and settlement instructions through the FIX message chain to the front-end blotter, enabling traders and operations to see full lifecycle state in a single view",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 50
+  },
+  {
+    "text": "to see full lifecycle state in a single view (CORPORATEFX-1750, 1830, 1952, 2327, 2259).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 51
+  },
+  {
+    "text": "She implemented the Apply SI audit trail — capturing submission, approval, and deletion of settlement instructions with pre-trade audit flags, enabling compliance to reconstruct the full history of who instructed what and when (CORPORATEFX-2336, 2443, 3401, 3816).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 52
+  },
+  {
+    "text": "She built freeform beneficiary handling — allowing operations to enter ad-hoc beneficiary details for one-off payments where no pre-registered SSI exists, with dry-run validation, bene group assignment, and storage alongside standard SSIs (CORPORATEFX-2048, 2050, 2059, 2067, 2264).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 53
+  },
+  {
+    "text": "She delivered purpose code and document code flow — accepting regulatory codes from the UI on quote requests, persisting through trade booking, and including in TCRs and KDB — required for regulatory compliance in markets like India and Brazil that mandate transaction purpose reporting",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 54
+  },
+  {
+    "text": "Brazil that mandate transaction purpose reporting (CORPORATEFX-2300, 2508, 2825).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 55
+  },
+  {
+    "text": "Settlement Instruction Lifecycle & SSI (2025–2026)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 56
+  },
+  {
+    "text": "Sarah implemented SSI source system tracking — adding si_src_sys to settlement instruction tables so operations can distinguish between SSIs from TSS, manual entry, and template-based sources, improving traceability when SIs fail at the back office (CORPORATEFX-3946, 3955, 3981).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 57
+  },
+  {
+    "text": "She built the SSI cache layer — a new cfx_ssi_cache table to store and deduplicate SSI responses from TSS, reducing redundant external calls and improving SI lookup performance for high-frequency branches (CORPORATEFX-4434, 4528, 4571, 4603).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 58
+  },
+  {
+    "text": "She delivered cancel-replace settlement handling — preventing SI deletion when contracts are replaced, preserving cashflows and party data, adding audit trail entries for the replacement, and suppressing duplicate TCRs — critical for avoiding failed settlements on amended trades (CORPORATEFX-4198,",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 59
+  },
+  {
+    "text": "settlements on amended trades (CORPORATEFX-4198, 4199, 4200, 4201, 4228, 4441, 4448).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 60
+  },
+  {
+    "text": "She implemented Japan branch SSI enablement — removing hardcoded JP_TOKYO SI disablement in cfx-repository and adding buy-side non-SSI rejection rules in cfx-cntrct, bringing Tokyo onto standardised SSI settlement (CORPORATEFX-4813).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 61
+  },
+  {
+    "text": "She built netting SI removal — automatically removing Transact SIs when the back office nets a contract, preventing duplicate settlement instructions reaching correspondent banks (CORPORATEFX-4731).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 62
+  },
+  {
+    "text": "FI Markup Pricing Service (2024)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 63
+  },
+  {
+    "text": "Sarah created the FI Markup Pricing Service from scratch (cfx-fi-markup) over Jun–Sep 2024 — a standalone microservice enabling the sales desk to configure per-client markup pricing schemas for Fixed Income FX products.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 64
+  },
+  {
+    "text": "She built the full CRUD lifecycle: create new schema templates, save and replace default schemas per currency, retrieve schema details, and delete templates — all via JMS request/reply messaging through the platform's standard FIX protocol (CORPORATEFX-2885, 2887, 2888, 2903, 2904, 3040, 3042).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 65
+  },
+  {
+    "text": "She implemented markup calculation and persistence in cfx-trd — saving markup fields on trades, recording calculation audit in cfx_markup_pricing_calc, and enabling recalculation when account group or schema changes post-trade (CORPORATEFX-2910, 2936, 2977, 3357, 3397, 3399, 3436).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 66
+  },
+  {
+    "text": "She extended cfx-messages with FI Markup message types and added markup fields to execution reports and TCRs so downstream consumers (UI, reporting) can display markup details (CORPORATEFX-2904, 2935, 2977).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 67
+  },
+  {
+    "text": "She fixed production bugs: decimal precision for spread values, Oracle SQL errors, null pointer exceptions, and incorrect markup calculation persistence — delivered across 7 bug-fix PRs in rapid succession during UAT (CORPORATEFX-3255, 3258, 3302, 3319, 3320, 3339, 3380, 3426).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 68
+  },
+  {
+    "text": "Trade Service Core (2021–2024)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 69
+  },
+  {
+    "text": "Sarah contributed to the core trade processing engine (cfx-trd) from its early days — 102 commits spanning booking, trade status management, confirmation handling, and settlement instruction orchestration.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 70
+  },
+  {
+    "text": "She implemented confirmation matching — persisting full confirmation details into the transaction audit when a trade reaches Matched status, providing the compliance record linking execution to counterparty confirmation (CORPORATEFX-2186).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 71
+  },
+  {
+    "text": "She built pending confirmation flow — setting pending flags on trades when confirmation is submitted to TSS and updating when matched, allowing the blotter to show real-time confirmation status (CORPORATEFX-1903).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 72
+  },
+  {
+    "text": "She delivered check-of-sale and draft payment support — adding new payment methods, saving flags in trade and booking tables, and propagating to order singles and execution reports for branches that use physical instrument settlement (CORPORATEFX-1347, 2569).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 73
+  },
+  {
+    "text": "She added a consumer payment flag to trade party data and TCRs, distinguishing retail consumer payments from institutional flows for regulatory reporting (CORPORATEFX-3106, 3107).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 74
+  },
+  {
+    "text": "Netting & TSS Integration (2024)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 75
+  },
+  {
+    "text": "Sarah built TSS netting tables and request tracking — creating the cfx_tss_net_details_reqs schema and batch request handling to support net settlement of multiple cashflows into a single instruction, reducing settlement volume and operational cost (CORPORATEFX-2764, 2899, 3109).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 76
+  },
+  {
+    "text": "She developed the NetSettlementActionRequest/Response message types in cfx-messages to integrate the netting flow with the platform's existing JMS infrastructure (CORPORATEFX-2764, 2975).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 77
+  },
+  {
+    "text": "Database Schema & Data Management (2021–2026)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 78
+  },
+  {
+    "text": "Sarah authored 265 Liquibase changelogs covering trade tables, settlement instructions, confirmations, branch configuration, product config, calendar data, FI markup, netting, MTM valuations, MAARS contracts, SSI cache, document bundles, and regulatory reference data.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 79
+  },
+  {
+    "text": "She managed production data repairs — beneficiary migration corrections (removing invalid SWIFT account codes), ghost trade cleanup, and incorrectly recorded markup calculations (CORPORATEFX-2842, 2607, 3177, 3380).",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 80
+  },
+  {
+    "text": "She designed branch configuration schema — region seed data, MTM contributor config, netting flags, GL accounts for E2E, product currency config, and notification frequency tables that control per-branch behaviour across the platform.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 81
+  },
+  {
+    "text": "Shared Messaging Library (2021–2026)",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 82
+  },
+  {
+    "text": "Sarah contributed 162 commits to cfx-messages — defining trade, order, settlement, confirmation, markup, netting, and contract message structures used across all 40+ services.",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 83
+  },
+  {
+    "text": "She added fields for E2E trade flow, beneficiary handling, purpose/document codes, drawdown IDs, Athena deal IDs, trade audit statuses, and SSI supplementary statuses — each requiring coordinated changes across",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 84
+  },
+  {
+    "text": "mthree\n\nFull-time · 1 yr 4 mos\n\n    Software Developer at mthree\n\n    Oct 2021 - Nov 2022 · 1 yr 2 mos\n\n    Bournemouth, England, United Kingdom\n\n     SQL and Java\n\n    Alumni Trainee in Software Development\n\n    Aug 2021 - Oct 2021 · 3 mos",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 85
+  },
+  {
+    "text": "Aug 2021 - Oct 2021 · 3 mos\n\n    Software development using Java with a focus on financial markets.\n    Relational database design using SQL.\n\n     SQL",
+    "source": "private_docs\\Work.md",
+    "private": true,
+    "chunk_index": 86
+  }
+]
