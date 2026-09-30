@@ -16,7 +16,15 @@ load_dotenv()
 INDEX_DIR = Path(__file__).resolve().parent / "index"
 INDEX_PATH = INDEX_DIR / "faiss.index"
 METADATA_PATH = INDEX_DIR / "metadata.json"
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "sentence-transformers/paraphrase-MiniLM-L3-v2"
+_EMBEDDING_MODEL_CACHE = None
+
+
+def get_embedding_model():
+    global _EMBEDDING_MODEL_CACHE
+    if _EMBEDDING_MODEL_CACHE is None:
+        _EMBEDDING_MODEL_CACHE = SentenceTransformer(EMBEDDING_MODEL, device="cpu")
+    return _EMBEDDING_MODEL_CACHE
 
 
 class _SimpleRAG:
@@ -99,7 +107,7 @@ def build_vector_index(documents: list[Document], force_refresh: bool = False):
     if not entries:
         raise ValueError("No non-empty document chunks were created from scraped content.")
 
-    model = SentenceTransformer(EMBEDDING_MODEL)
+    model = get_embedding_model()
     texts = [entry["text"] for entry in entries]
     embeddings = model.encode(texts, convert_to_numpy=True, normalize_embeddings=True)
     embeddings = np.asarray(embeddings, dtype=np.float32)
@@ -118,7 +126,7 @@ def load_vector_index():
 
     index = faiss.read_index(str(INDEX_PATH))
     metadata = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
-    model = SentenceTransformer(EMBEDDING_MODEL)
+    model = get_embedding_model()
     return index, metadata, model
 
 
