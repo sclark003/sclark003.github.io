@@ -26,7 +26,9 @@ const Chat = () => {
     setIsLoading(true);
 
     try {
-      const API_BASE = import.meta.env.VITE_PYTHON_URL || '';
+      const rawApiBase = (import.meta.env.VITE_PYTHON_URL || '').trim();
+      const isLocalApi = /^https?:\/\/(localhost|127\.0\.0\.1)(?::\d+)?$/i.test(rawApiBase);
+      const API_BASE = rawApiBase && !isLocalApi ? rawApiBase : '';
       const endpoint = API_BASE
         ? `${API_BASE.replace(/\/$/, '')}/chat`
         : '/chat';
