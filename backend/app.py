@@ -1,6 +1,9 @@
-from fastapi import FastAPI
+import re
+
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+
 from rag import get_rag_chain
 
 app = FastAPI()
@@ -15,6 +18,24 @@ allowed_origins = [
     "https://sclark003.github.io",
     "https://www.sclark003.github.io",
 ]
+
+
+@app.middleware("http")
+async def add_cors_headers(request: Request, call_next):
+    origin = request.headers.get("origin")
+    response = await call_next(request)
+
+    if origin and (
+        origin in allowed_origins or re.match(r"https://.*\.github\.io$", origin)
+    ):
+        response.headers["Access-Control-Allow-Origin"] = origin
+        response.headers["Access-Control-Allow-Credentials"] = "true"
+        response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+        response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, X-Requested-With"
+        response.headers["Vary"] = "Origin"
+
+    return response
+
 
 app.add_middleware(
     CORSMiddleware,
