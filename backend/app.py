@@ -80,5 +80,10 @@ async def chat(request: ChatRequest):
     if history_lines:
         question = "Previous conversation:\n" + "\n".join(history_lines) + "\n\nCurrent question: " + question
 
-    result = get_rag_chain().invoke({"query": question})
-    return {"reply": result["result"]}
+    chain = get_rag_chain()
+    try:
+        result = chain.invoke({"query": question})
+        return {"reply": result["result"]}
+    finally:
+        from rag import clear_rag_chain
+        clear_rag_chain()
