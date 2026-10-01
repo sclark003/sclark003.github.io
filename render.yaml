@@ -16,4 +16,6 @@ services:
         value: "1"
       - key: PIP_EXTRA_INDEX_URL
         value: https://download.pytorch.org/whl/cpu
-    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT --workers 1
+      - key: PORT
+        value: "8000"
+    startCommand: gunicorn app:app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:${PORT:-8000} --workers 1
