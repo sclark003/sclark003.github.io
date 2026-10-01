@@ -60,6 +60,16 @@ class ChatRequest(BaseModel):
     history: list[dict[str, str]] = []
 
 
+@app.get("/")
+async def root():
+    return {"status": "ok", "service": "sclark003-backend"}
+
+
+@app.get("/healthz")
+async def healthz():
+    return {"status": "ok"}
+
+
 @app.post("/chat")
 async def chat(request: ChatRequest):
     if not request.message or len(request.message.strip()) == 0:
