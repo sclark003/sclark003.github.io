@@ -10,6 +10,13 @@ from rag import clear_rag_chain, get_rag_chain, load_markdown_documents
 client = TestClient(backend_app.app)
 
 
+def test_rag_uses_context_fallback_without_llm(monkeypatch):
+    monkeypatch.setattr(rag, "retrieve_context", lambda *args, **kwargs: "Sarah Clark is a software engineer and developer.")
+    chain = rag._SimpleRAG(llm=None, index=None, metadata=[], model=None)
+    result = chain.invoke({"query": "What is Sarah Clark?"})
+    assert "Sarah" in result["result"]
+
+
 def test_heavy_runtime_dependencies_are_lazy_loaded():
     assert "sentence_transformers" not in sys.modules
     assert "langchain_groq" not in sys.modules

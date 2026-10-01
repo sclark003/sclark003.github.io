@@ -15,6 +15,12 @@ INDEX_DIR = Path(__file__).resolve().parent / "index"
 INDEX_PATH = INDEX_DIR / "faiss.index"
 METADATA_PATH = INDEX_DIR / "metadata.json"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+GROQ_MODELS = [
+    "llama-3.3-70b-versatile",
+    "llama-3.1-8b-instant",
+    "gemma2-9b-it",
+    "meta-llama/llama-4-scout-17b-16e-instruct",
+]
 _EMBEDDING_MODEL_CACHE = None
 
 
@@ -34,9 +40,22 @@ class _SimpleRAG:
         self.metadata = metadata
         self.model = model
 
+    def _fallback_answer(self, query: str, context: str) -> str:
+        if not context:
+            return "I could not find enough portfolio context to answer that question confidently."
+
+        chunks = [chunk.strip() for chunk in context.split("\n\n") if chunk.strip()]
+        best = chunks[0]
+        preview = re.sub(r"\s+", " ", best)[:500].strip()
+        return f"Based on the portfolio context, {preview}"
+
     def invoke(self, payload):
         query = str(payload.get("query", "")).strip()
         context = retrieve_context(query, self.index, self.metadata, self.model, top_k=2)
+
+        if self.llm is None:
+            return {"result": self._fallback_answer(query, context)}
+
         prompt = (
             "You are a helpful assistant for Sarah Clark's portfolio website. "
             "Answer questions about Sarah's skills, projects, experience and background "
@@ -44,7 +63,13 @@ class _SimpleRAG:
             "If the answer is not present in the context, say you do not have that information.\n\n"
             f"Context: {context}\n\nQuestion: {query}\n\nAnswer:"
         )
-        result = self.llm.invoke(prompt)
+
+        try:
+            result = self.llm.invoke(prompt, timeout=15)
+        except Exception as exc:
+            print(f"Groq call failed, falling back to retrieved context: {exc}")
+            return {"result": self._fallback_answer(query, context)}
+
         answer = getattr(result, "content", str(result)).strip()
         return {"result": answer}
 
@@ -159,16 +184,39 @@ def retrieve_context(query: str, index, metadata, model, top_k: int = 3) -> str:
     return "\n\n".join(context_parts)
 
 
-def build_rag_chain(force_refresh: bool = False):
+def get_groq_llm(model_candidates=None):
     from langchain_groq import ChatGroq
 
+    groq_api_key = os.getenv("GROQ_API_KEY")
+    if not groq_api_key:
+        return None
+
+    candidates = model_candidates or GROQ_MODELS
+    last_error = None
+
+    for model_name in candidates:
+        try:
+            return ChatGroq(
+                model=model_name,
+                temperature=0.2,
+                api_key=groq_api_key,
+                timeout=15,
+                max_retries=0,
+            )
+        except Exception as exc:
+            last_error = exc
+            print(f"Groq model {model_name} unavailable: {exc}")
+
+    if last_error is not None:
+        print(f"All Groq model candidates failed; using local context fallback. {last_error}")
+    return None
+
+
+def build_rag_chain(force_refresh: bool = False):
     if INDEX_PATH.exists() and METADATA_PATH.exists() and not force_refresh:
         try:
             index, metadata, model = load_vector_index()
-            groq_api_key = os.getenv("GROQ_API_KEY")
-            if not groq_api_key:
-                raise ValueError("GROQ_API_KEY not found in environment variables.")
-            llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.2, api_key=groq_api_key)
+            llm = get_groq_llm()
             return _SimpleRAG(llm=llm, index=index, metadata=metadata, model=model)
         except Exception as exc:
             print(f"Loaded cached index failed, rebuilding from source: {exc}")
@@ -178,12 +226,7 @@ def build_rag_chain(force_refresh: bool = False):
         raise ValueError("No markdown content found in the repo source files.")
 
     index, metadata, model = build_vector_index(documents, force_refresh=force_refresh)
-
-    groq_api_key = os.getenv("GROQ_API_KEY")
-    if not groq_api_key:
-        raise ValueError("GROQ_API_KEY not found in environment variables.")
-
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.2, api_key=groq_api_key)
+    llm = get_groq_llm()
     return _SimpleRAG(llm=llm, index=index, metadata=metadata, model=model)
 
 
