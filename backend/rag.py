@@ -36,12 +36,12 @@ class _SimpleRAG:
 
     def invoke(self, payload):
         query = str(payload.get("query", "")).strip()
-        context = retrieve_context(query, self.index, self.metadata, self.model, top_k=3)
+        context = retrieve_context(query, self.index, self.metadata, self.model, top_k=2)
         prompt = (
             "You are a helpful assistant for Sarah Clark's portfolio website. "
             "Answer questions about Sarah's skills, projects, experience and background "
-            "using only the information provided below. Be concise and friendly. "
-            "If the answer is not in the context, say you don't have that information.\n\n"
+            "using only the provided context. Keep the answer brief and factual. "
+            "If the answer is not present in the context, say you do not have that information.\n\n"
             f"Context: {context}\n\nQuestion: {query}\n\nAnswer:"
         )
         result = self.llm.invoke(prompt)
@@ -168,7 +168,7 @@ def build_rag_chain(force_refresh: bool = False):
             groq_api_key = os.getenv("GROQ_API_KEY")
             if not groq_api_key:
                 raise ValueError("GROQ_API_KEY not found in environment variables.")
-            llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0.3, api_key=groq_api_key)
+            llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.2, api_key=groq_api_key)
             return _SimpleRAG(llm=llm, index=index, metadata=metadata, model=model)
         except Exception as exc:
             print(f"Loaded cached index failed, rebuilding from source: {exc}")
@@ -183,7 +183,7 @@ def build_rag_chain(force_refresh: bool = False):
     if not groq_api_key:
         raise ValueError("GROQ_API_KEY not found in environment variables.")
 
-    llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0.3, api_key=groq_api_key)
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.2, api_key=groq_api_key)
     return _SimpleRAG(llm=llm, index=index, metadata=metadata, model=model)
 
 
