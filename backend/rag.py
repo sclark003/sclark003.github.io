@@ -2,14 +2,12 @@ import json
 import os
 import re
 from pathlib import Path
+from typing import TYPE_CHECKING
 
-import faiss
-import numpy as np
 from dotenv import load_dotenv
-from langchain_classic.schema import Document
-from langchain_groq import ChatGroq
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
+
+if TYPE_CHECKING:
+    from langchain_classic.schema import Document
 
 load_dotenv()
 
@@ -23,6 +21,8 @@ _EMBEDDING_MODEL_CACHE = None
 def get_embedding_model():
     global _EMBEDDING_MODEL_CACHE
     if _EMBEDDING_MODEL_CACHE is None:
+        from sentence_transformers import SentenceTransformer
+
         _EMBEDDING_MODEL_CACHE = SentenceTransformer(EMBEDDING_MODEL, device="cpu")
     return _EMBEDDING_MODEL_CACHE
 
@@ -49,8 +49,10 @@ class _SimpleRAG:
         return {"result": answer}
 
 
-def load_markdown_documents() -> list[Document]:
+def load_markdown_documents() -> list:
     """Load text from markdown files in the repo."""
+    from langchain_classic.schema import Document
+
     documents: list[Document] = []
     repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     private_root = os.path.join(repo_root, "private_docs")
@@ -82,9 +84,11 @@ def load_markdown_documents() -> list[Document]:
     return documents
 
 
-def build_vector_index(documents: list[Document], force_refresh: bool = False):
+def build_vector_index(documents: list, force_refresh: bool = False):
     if INDEX_PATH.exists() and METADATA_PATH.exists() and not force_refresh:
         return load_vector_index()
+
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
 
     INDEX_DIR.mkdir(parents=True, exist_ok=True)
     splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
@@ -107,6 +111,9 @@ def build_vector_index(documents: list[Document], force_refresh: bool = False):
     if not entries:
         raise ValueError("No non-empty document chunks were created from scraped content.")
 
+    import faiss
+    import numpy as np
+
     model = get_embedding_model()
     texts = [entry["text"] for entry in entries]
     embeddings = model.encode(texts, convert_to_numpy=True, normalize_embeddings=True)
@@ -121,6 +128,8 @@ def build_vector_index(documents: list[Document], force_refresh: bool = False):
 
 
 def load_vector_index():
+    import faiss
+
     if not INDEX_PATH.exists() or not METADATA_PATH.exists():
         raise FileNotFoundError(f"Vector index not found at {INDEX_DIR}")
 
@@ -133,6 +142,8 @@ def load_vector_index():
 def retrieve_context(query: str, index, metadata, model, top_k: int = 3) -> str:
     if not query:
         return ""
+
+    import numpy as np
 
     query_vec = model.encode([query], convert_to_numpy=True, normalize_embeddings=True)
     query_vec = np.asarray(query_vec, dtype=np.float32)
@@ -149,6 +160,8 @@ def retrieve_context(query: str, index, metadata, model, top_k: int = 3) -> str:
 
 
 def build_rag_chain(force_refresh: bool = False):
+    from langchain_groq import ChatGroq
+
     if INDEX_PATH.exists() and METADATA_PATH.exists() and not force_refresh:
         try:
             index, metadata, model = load_vector_index()
