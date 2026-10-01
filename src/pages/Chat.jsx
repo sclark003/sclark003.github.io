@@ -28,7 +28,13 @@ const Chat = () => {
     try {
       const rawApiBase = (import.meta.env.VITE_PYTHON_URL || '').trim();
       const isLocalApi = /^https?:\/\/(localhost|127\.0\.0\.1)(?::\d+)?$/i.test(rawApiBase);
+      const isGitHubPages = typeof window !== 'undefined' && /github\.io$/i.test(window.location.hostname);
       const API_BASE = rawApiBase && !isLocalApi ? rawApiBase : '';
+
+      if (!API_BASE && isGitHubPages) {
+        throw new Error('VITE_PYTHON_URL is not configured. Set it to your Render backend URL, e.g. https://sclark003-backend.onrender.com');
+      }
+
       const endpoint = API_BASE
         ? `${API_BASE.replace(/\/$/, '')}/chat`
         : '/chat';
@@ -52,7 +58,10 @@ const Chat = () => {
       const botMessage = { role: 'bot', text: data.reply || 'No reply from backend.' };
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
-      setMessages((prev) => [...prev, { role: 'bot', text: 'Sorry, something went wrong.' }]);
+      const errorText = error instanceof Error && error.message
+        ? error.message
+        : 'Sorry, something went wrong.';
+      setMessages((prev) => [...prev, { role: 'bot', text: errorText }]);
       console.error(error);
     } finally {
       setIsLoading(false);
