@@ -15,6 +15,7 @@ INDEX_DIR = Path(__file__).resolve().parent / "index"
 INDEX_PATH = INDEX_DIR / "faiss.index"
 METADATA_PATH = INDEX_DIR / "metadata.json"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+USE_GROQ = os.getenv("USE_GROQ", "false").lower() in {"1", "true", "yes", "on"}
 GROQ_MODELS = [
     "llama-3.3-70b-versatile",
     "llama-3.1-8b-instant",
@@ -185,6 +186,10 @@ def retrieve_context(query: str, index, metadata, model, top_k: int = 3) -> str:
 
 
 def get_groq_llm(model_candidates=None):
+    if not USE_GROQ:
+        print("Groq disabled; using stored-context fallback for this deployment.")
+        return None
+
     from langchain_groq import ChatGroq
 
     groq_api_key = os.getenv("GROQ_API_KEY")
