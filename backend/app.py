@@ -9,14 +9,6 @@ from rag import get_rag_chain
 app = FastAPI()
 
 
-@app.on_event("startup")
-async def warm_rag_on_startup():
-    try:
-        get_rag_chain()
-    except Exception as exc:
-        print(f"Startup RAG warmup skipped: {exc}")
-
-
 allowed_origins = [
     "http://localhost:3000",
     "http://localhost:5173",
