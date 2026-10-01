@@ -15,13 +15,10 @@ INDEX_DIR = Path(__file__).resolve().parent / "index"
 INDEX_PATH = INDEX_DIR / "faiss.index"
 METADATA_PATH = INDEX_DIR / "metadata.json"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-MiniLM-L3-v2"
+MODEL_API_URL = os.getenv("MODEL_API_URL")
+MODEL_API_KEY = os.getenv("MODEL_API_KEY")
+MODEL_NAME = os.getenv("MODEL_NAME", "")
 USE_GROQ = os.getenv("USE_GROQ", "false").lower() in {"1", "true", "yes", "on"}
-GROQ_MODELS = [
-    "llama-3.3-70b-versatile",
-    "llama-3.1-8b-instant",
-    "gemma2-9b-it",
-    "meta-llama/llama-4-scout-17b-16e-instruct",
-]
 _EMBEDDING_MODEL_CACHE = None
 
 
@@ -54,7 +51,7 @@ class _SimpleRAG:
         query = str(payload.get("query", "")).strip()
         context = retrieve_context(query, self.index, self.metadata, self.model, top_k=2)
 
-        if self.llm is None:
+        if not context:
             return {"result": self._fallback_answer(query, context)}
 
         prompt = (
@@ -65,13 +62,21 @@ class _SimpleRAG:
             f"Context: {context}\n\nQuestion: {query}\n\nAnswer:"
         )
 
+        if not self.llm:
+            external_answer = call_optional_model(prompt)
+            if external_answer:
+                return {"result": external_answer}
+            return {"result": self._fallback_answer(query, context)}
+
         try:
-            result = self.llm.invoke(prompt, timeout=15)
+            result = self.llm.invoke(prompt, timeout=8)
         except Exception as exc:
-            print(f"Groq call failed, falling back to retrieved context: {exc}")
+            print(f"Model call failed, falling back to retrieved context: {exc}")
             return {"result": self._fallback_answer(query, context)}
 
         answer = getattr(result, "content", str(result)).strip()
+        if not answer:
+            return {"result": self._fallback_answer(query, context)}
         return {"result": answer}
 
 
@@ -185,35 +190,53 @@ def retrieve_context(query: str, index, metadata, model, top_k: int = 3) -> str:
     return "\n\n".join(context_parts)
 
 
-def get_groq_llm(model_candidates=None):
-    if not USE_GROQ:
-        print("Groq disabled; using stored-context fallback for this deployment.")
+def call_optional_model(prompt: str):
+    url = os.getenv("MODEL_API_URL")
+    if not url:
         return None
 
-    from langchain_groq import ChatGroq
+    try:
+        import json
+        import urllib.request
 
-    groq_api_key = os.getenv("GROQ_API_KEY")
-    if not groq_api_key:
-        return None
+        payload = {
+            "model": os.getenv("MODEL_NAME") or "",
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.2,
+        }
+        headers = {"Content-Type": "application/json"}
+        api_key = os.getenv("MODEL_API_KEY")
+        if api_key:
+            headers["Authorization"] = f"Bearer {api_key}"
 
-    candidates = model_candidates or GROQ_MODELS
-    last_error = None
+        request = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers=headers,
+            method="POST",
+        )
+        with urllib.request.urlopen(request, timeout=8) as response:
+            data = json.loads(response.read().decode("utf-8"))
 
-    for model_name in candidates:
-        try:
-            return ChatGroq(
-                model=model_name,
-                temperature=0.2,
-                api_key=groq_api_key,
-                timeout=15,
-                max_retries=0,
-            )
-        except Exception as exc:
-            last_error = exc
-            print(f"Groq model {model_name} unavailable: {exc}")
+        if isinstance(data, dict):
+            if isinstance(data.get("choices"), list) and data["choices"]:
+                message = data["choices"][0].get("message", {})
+                if isinstance(message, dict):
+                    content = message.get("content")
+                    if content:
+                        return str(content).strip()
+                text = data["choices"][0].get("text")
+                if text:
+                    return str(text).strip()
+            if isinstance(data.get("output"), list):
+                for item in data["output"]:
+                    if isinstance(item, dict) and item.get("content"):
+                        return str(item["content"]).strip()
+            if isinstance(data.get("content"), str) and data["content"].strip():
+                return data["content"].strip()
+    except Exception as exc:
+        print(f"Optional model call failed: {exc}")
 
-    if last_error is not None:
-        print(f"All Groq model candidates failed; using local context fallback. {last_error}")
     return None
 
 
@@ -221,8 +244,7 @@ def build_rag_chain(force_refresh: bool = False):
     if INDEX_PATH.exists() and METADATA_PATH.exists() and not force_refresh:
         try:
             index, metadata, model = load_vector_index()
-            llm = get_groq_llm()
-            return _SimpleRAG(llm=llm, index=index, metadata=metadata, model=model)
+            return _SimpleRAG(llm=None, index=index, metadata=metadata, model=model)
         except Exception as exc:
             print(f"Loaded cached index failed, rebuilding from source: {exc}")
 
@@ -231,8 +253,7 @@ def build_rag_chain(force_refresh: bool = False):
         raise ValueError("No markdown content found in the repo source files.")
 
     index, metadata, model = build_vector_index(documents, force_refresh=force_refresh)
-    llm = get_groq_llm()
-    return _SimpleRAG(llm=llm, index=index, metadata=metadata, model=model)
+    return _SimpleRAG(llm=None, index=index, metadata=metadata, model=model)
 
 
 rag_chain = None
