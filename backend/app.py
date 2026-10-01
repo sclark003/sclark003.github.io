@@ -20,14 +20,6 @@ allowed_origins = [
 ]
 
 
-@app.on_event("startup")
-async def warm_rag_on_startup():
-    try:
-        get_rag_chain()
-    except Exception:
-        pass
-
-
 @app.middleware("http")
 async def add_cors_headers(request: Request, call_next):
     origin = request.headers.get("origin")

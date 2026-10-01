@@ -14,7 +14,7 @@ load_dotenv()
 INDEX_DIR = Path(__file__).resolve().parent / "index"
 INDEX_PATH = INDEX_DIR / "faiss.index"
 METADATA_PATH = INDEX_DIR / "metadata.json"
-EMBEDDING_MODEL = "sentence-transformers/paraphrase-MiniLM-L3-v2"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 _EMBEDDING_MODEL_CACHE = None
 
 
